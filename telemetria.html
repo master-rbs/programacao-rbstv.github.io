@@ -14,60 +14,58 @@
 
 <style>
   p {margin: 250px 30px 0 30px;}
+  
+  
+.item:hover{
+border: solid #DDE 2px;
+}
 
 #item1{
 position: absolute;
-opacity:.1;
-background: rgba(255,0,255,1);
-margin-left:22%;
+margin-left:22.3%;
 margin-top: 7em;
 height:12.7em;
 width:16.5em;
 }
-#item1:hover{
-opacity:.4;
-}
+
 
 
 #item2{
 position: absolute;
-opacity:.1;
-background: rgba(255,0,255,1);
-margin-left:22%;
+margin-left:22.3%;
 margin-top: 20em;
-height:12.7em;
+height:10em;
 width:16.5em;
-}
-#item2:hover{
-opacity:.4;
 }
 
 
 #item3{
 position: absolute;
-opacity:.1;
-background: rgba(255,0,255,1);
 margin-left:51%;
 margin-top: 7em;
 height:12.7em;
 width:16em;
 }
-#item3:hover{
-opacity:.4;
-}
+
 
 #item4{
 position: absolute;
-opacity:.1;
-background: rgba(255,0,255,1);
 margin-left:51%;
 margin-top: 20em;
 height:12.5em;
 width:16em;
 }
-#item4:hover{
-opacity:.4;
+
+
+#coax{
+position: absolute;
+margin-left:22.3%;
+margin-top: 30em;
+height:4.5em;
+width:16.5em;
 }
+
+
 .popover{
 max-width:500px !important;
 }
@@ -91,11 +89,12 @@ td{padding: 5px;}
 <body>
 
 <div id="panel"><img class="bkg" src="http://programacao-rbstv.github.io/img/tele_on.jpg">
-<div id="item1" class="btn" rel="popover fade left"  data-trigger="hover" title="Potência Direta do Transmissor Analógico Principal"> </div>
-<div id="item2"class="btn" rel="popover"  data-trigger="hover" title="Potência Direta do Transmissor Analógico Reserva"> </div>
-<div id="item3"class="btn" rel="popover"  data-trigger="hover" title="Medidores do Transmissor Digital Principal"> </div>
-<div id="item4"class="btn" rel="popover"  data-trigger="hover" title="Medidores do Transmissor Digital Reserva"> </div>
-
+<div id="item1" class="btn item" rel="popover fade left"   title="Potência Direta do Transmissor Analógico Principal"> </div>
+<div id="item2"class="btn item" rel="popover"  title="Potência Direta do Transmissor Analógico Reserva"> </div>
+<div id="coax"class="btn item" rel="popover"   title="Troca entre Transmissores"> </div>
+<div id="item3"class="btn item" rel="popover"   title="Medidores do Transmissor Digital Principal"> </div>
+<div id="item4"class="btn item" rel="popover"   title="Medidores do Transmissor Digital Reserva"> </div>
+<!--  data-trigger="hover" --> 
 </div>
 
    <script src="js/bootstrap.min.js"></script>
@@ -103,17 +102,43 @@ td{padding: 5px;}
 
 <script>
 	$(document).ready(function(){
-		var item1 = `Este ponteiro refere-se a medida de <b>POTÊNCIA DIRETA</b> (potência boa) do transmissor analógico <b>PRINCIPAL</b>. Ela deve sempre estar na faixa cinza, caso ultrapasse será gerado um alarme, mostrando que há alguma anomalia. Não havendo potência não haverá sinal analógico no ar.
-Logo abaixo tem a medida de <b>POTÊNCIA REFLETIDA</b> (potência ruim) ela <b><span style="color:red">não deve ultrapassar os 20W</span></b>. Quanto menos melhor. `
-		var item1 = `Este ponteiro refere-se a medida de <b>POTÊNCIA DIRETA</b> (potência boa) do transmissor analógico <b>PRINCIPAL</b>. Ela deve sempre estar na faixa cinza, caso ultrapasse será gerado um alarme, mostrando que há alguma anomalia. Não havendo potência não haverá sinal analógico no ar.
-Logo abaixo tem a medida de <b>POTÊNCIA REFLETIDA</b> (potência ruim) ela <b><span style="color:red">não deve ultrapassar os 20W</span></b>. Quanto menos melhor. `
+		var item1 = `
+			Este ponteiro refere-se a medida de <b>POTÊNCIA DIRETA</b> (potência boa) do transmissor analógico <b>PRINCIPAL</b>. Ela deve sempre estar na faixa cinza, caso ultrapasse será gerado um alarme, mostrando que há alguma anomalia. Não havendo potência não haverá sinal analógico no ar.
+			Logo abaixo tem a medida de <b>POTÊNCIA REFLETIDA</b> (potência ruim) ela <b><span style="color:red">não deve ultrapassar os 20W</span></b>. Quanto menos melhor. 
+			`
+		var item2 = `
+			Esta é a medida de potência do transmissor analógico RESERVA, normalmente a potência direta estará em 0 W. 
+			Vídeo TX RES: sempre deve estar em VERDE, mostra que há presença de vídeo no transmissor reserva.
+			`
+		var item3 = `
+			Esta é a medida de potência do transmissor analógico RESERVA, normalmente a potência direta estará em 0 W. 
+			Vídeo TX RES: sempre deve estar em VERDE, mostra que há presença de vídeo no transmissor reserva.
+			`
+		var item4 = `
+			Esta é a medida de potência do transmissor analógico RESERVA, normalmente a potência direta estará em 0 W. 
+			Vídeo TX RES: sempre deve estar em VERDE, mostra que há presença de vídeo no transmissor reserva.
+			`
+		var coax = `
+			Este comando realiza a troca entre os transmissores analógicos principal e reserva. Quando o TX analógico principal mostrar alguma anomalia deverá ser realizada a troca entre os transmissores. 
+Está troca é feita, clicando, apenas uma vez, no comando TROCA TX ANALOG, que irá forçar a comutação entre os transmissores. Este comando tira o sinal analógico do ar por um instante de tempo, por tanto deve se ter total consentimento da ação realizada.
+O status RELÉ COAXIAL mostra qual transmissor está no ar. Neste caso é o PRINCIPAL, caso comute para o transmissor reserva aparecerá um alarme e mudará o nome para TX RESERVA.
+
+			`
 		
+
+
+
 		var image = '<td class="mid"><img  src="/img/info.png""></td> <td>'
+		
+		
+		
+		
 		var close	=	'</td>';
 		$('#item1').popover({placement: 'bottom', content: image + item1 + close ,html: true});
-		$('#item2').popover({placement: 'bottom', content: image + item1 + close , html: true});
-		$('#item3').popover({placement: 'bottom', content: image + item1 + close , html: true});
-		$('#item4').popover({placement: 'bottom', content: image + item1 + close , html: true});
+		$('#item2').popover({placement: 'bottom', content: image + item2 + close , html: true});
+		$('#item3').popover({placement: 'bottom', content: image + item3 + close , html: true});
+		$('#item4').popover({placement: 'bottom', content: image + item4 + close , html: true});
+		$('#coax').popover({placement: 'bottom', content: image + coax + close , html: true});
 	});
 </script>
 
