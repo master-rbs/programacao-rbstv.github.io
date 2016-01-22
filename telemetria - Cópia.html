@@ -1,64 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-			
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
+
+</head>
+
 <style>
-
-
   p {margin: 250px 30px 0 30px;}
-  body{background:white !important;}
+  
   
 .item:hover{
 border: solid #DDE 2px;
 }
 
 #item1{
- // background:pink;
 position: absolute;
 margin-left:22.3%;
-margin-top: 7.5em;
-height:13.2em;
+margin-top: 7em;
+height:12.7em;
 width:16.5em;
 }
 
 
 
 #item2{
-   // background:pink;
 position: absolute;
 margin-left:22.3%;
-margin-top: 20.5em;
-height:10.5em;
+margin-top: 20em;
+height:10em;
 width:16.5em;
 }
 
 
 #item3{
-   // background:pink;
 position: absolute;
 margin-left:51%;
-margin-top: 7.5em;
-height:13.2em;
-width:16.5em;
+margin-top: 7em;
+height:12.7em;
+width:16em;
 }
 
 
 #item4{
-   // background:pink;
 position: absolute;
 margin-left:51%;
-margin-top: 20.5em;
+margin-top: 20em;
 height:12.5em;
-width:16.5em;
+width:16em;
 }
 
 
 #coax{
-   // background:pink;
 position: absolute;
 margin-left:22.3%;
-margin-top: 31.5em;
+margin-top: 30em;
 height:4.5em;
 width:16.5em;
 }
@@ -71,8 +73,7 @@ max-width:500px !important;
 
 body{margin:0;}
 
-#panel{position:absolute;width:74em;z-index:2;
-  }
+#panel{position:absolute;width:74em;}
 
 .bkg{
 width:100%;
@@ -83,79 +84,11 @@ z-index:-1;
 .mid{vertical-align:middle}
 
 td{padding: 5px;}
-
-
-
 </style>
 
-<script src="js/jquery.min.js"></script>
-<meta charset="utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.js"></script>
-    <![endif]-->
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
-</head>
-
-
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#"><img class="logo" src="img/logo.png"></a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li ><a href="index" accesskey="1" title="">Home</a></li>
-				<li><a href="https://gruporbs-my.sharepoint.com/personal/lucas_oliveira_rbstv_com_br/_layouts/15/WopiFrame.aspx?sourcedoc={34CF7E95-5924-44C2-9F94-644DD8D7BE69}&file=RBS%20Chamadas.xlsx&action=default" accesskey="2" title="">Chamadas</a></li>
-			
-				<li class="current_page_item"><a href="#" accesskey="3" title="">Telemetria</a></li>
-				<!--<li><a href="#" accesskey="4" title="">Careers</a></li>-->
-				<!--<li><a href="#" accesskey="5" title="">Contact Us</a></li>-->
-			</ul>
-		</div>
-	</div>
-	</div>
-	<div id="banner">
-		<div class="container">
-			<div class="title">
-				<h2>Programação RBS TV</h2>
-				<span class="byline">Ambiente centralizador teste</span> </div>
-				<div class="bannerbk">  </div>
-			<!--<ul class="actions">
-				<li><a href="#" class="button">A</a></li>
-			</ul>-->
-		</div>
-	</div>
-	<div id="extra" class="container">
-		<div class="title">
-			<h2>TELEMETRIA</h2>
-			<span class="byline">Manual Interativo</span> </div>
-			<ul class="actions">
-			<li><a href="Telemetria.zip" class="button">BAIXAR</a></li>
-		</ul>
-		
-			
 
-
-
-
-
-<div style="margin-left:-2.7em !important;" id="panel"><img class="bkg" src="http://programacao-rbstv.github.io/img/tele_on.jpg">
+<div id="panel"><img class="bkg" src="http://programacao-rbstv.github.io/img/tele_on.jpg">
 <div id="item1" class="btn item" rel="popover"  	data-trigger="hover"	title="Potência Direta do Transmissor Analógico Principal"> </div>
 <div id="item2"class="btn item" rel="popover"  	data-trigger="hover"	title="Potência Direta do Transmissor Analógico Reserva"> </div>
 <div id="coax"class="btn item" rel="popover"   	data-trigger="hover"	title="Troca entre Transmissores"> </div>
@@ -166,7 +99,6 @@ td{padding: 5px;}
 
    <script src="js/bootstrap.min.js"></script>
 
-		
 
 <script>
 
@@ -219,16 +151,4 @@ O status RELÉ COAXIAL mostra qual transmissor está no ar. Neste caso é o PRIN
 	
 </script>
 
-
-
-		
-
-	</div>
-	
-	
-	
-<div id="copyright" class="container">
-	<p>&copy; RBS TV</p>
-</div>
 </body>
-</html>
