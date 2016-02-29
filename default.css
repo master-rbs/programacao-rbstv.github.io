@@ -264,6 +264,14 @@
 /* 3-column                                                                      */
 /*********************************************************************************/
 
+.divbut:active{
+	background:#224D8E !important;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
+	transition: all 100ms;
+	color:#aaa !important;
+	text-shadow: 0 0 1px rgba(255,255,255,.5)
+}
+
 	.boxA,
 	.boxB,
 	.boxC
@@ -271,11 +279,25 @@
 		width: 320px;
 	}
 
+.divbut:hover{
+	background:#225DAE;
+	cursor:pointer;
+	color:white;
+
+}
+.divbut{
+	border-radius:10px;
+	transition:all 500ms ease;
+	
+}
+a .divbut{	color:#777;}
+
 	.boxA,
 	.boxB
 	{
 		float: left;
 		margin-right: 20px;
+		
 	}
 	
 	.boxC
