@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta tunnel="enabled">
+	<meta charset="utf-8">	
+	<title></title>
+	<style>
+
+	html{
+	height:100%;
+	overflow:hidden;
+	background: linear-gradient(to bottom, rgba(11,90,160,1) 0%,rgba(15,80,150,1) 41%,rgba(22,57,111,1) 100%); /* W3C */
+	}
+	#image{
+	text-align:center;
+
+	}
+
+	.arrrit{
+	position:absolute;
+	right:20px;
+	top:60%;
+	 cursor: pointer;
+	}
+	.arrlft{
+	position:absolute;
+	left:20px;
+	top:60%;
+	 cursor: pointer;
+	}
+
+	.arrlfta{
+	position:absolute;
+	left:20px;
+	top:60%;
+	cursor: pointer;
+	}
+	img.shad{
+	max-width: 65%;
+	border-radius:20px
+
+	}
+	img.fini{
+		width:250px;
+	}
+	#title{
+	font-family: "Segoe UI";
+	font-weight:700;
+	color:white;
+	font-size:30px;
+	margin:30px;
+	}
+	#helper{
+	font-family: "Segoe UI";
+	color:white;
+	font-size:16;
+	margin:11px;
+	text-align:center;
+	}
+	.shad {
+	    -webkit-filter: drop-shadow(8px 8px 25px rgba(0,0,0,0.5));
+	    filter: url(#drop-shadow);
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=8, Color='#444')";
+	    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=8, OffY=8, Color='#444')";
+	}
+
+	.arrlft:hover, .arrrit:hover, .arrlfta:hover, .arrlftb:hover {
+	    -webkit-filter: drop-shadow(0px 0px 25px rgba(255,255,255,0.5));
+	    filter: url(#drop-shadow2);
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+	    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+	}
+
+	</style>
+</head>
+
+<body>
+
+	<img style="position:absolute; bottom:20px; right:20px; width:100px;" src="http://www.gruporbs.com.br/wp-content/themes/rbs/img/rbs-footer-logo.png">
+	<div style="position:absolute; bottom:20px; left:20px; width:200px;color:white; font-family:Calibri, Arial, Helvetica, Sans Serif">Tutorial - Criar Alertas</div>
+	
+	<div id="title">
+
+	</div>
+
+	<div id="image">
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="12" dy="12" result="offsetblur"/>
+	        <feFlood flood-color="rgba(0,0,0,0.5)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+
+	<div id="helper">
+
+	</div>
+
+	<div id="duasArr">
+		<div id="voltaArr">
+
+			<div id="volta">
+				<img id="volta" class="arrlft" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-arrows/006763-3d-transparent-glass-icon-arrows-arrowhead-solid-left.png"onclick="setTimeout(function() {sildeMinus();},200)" style="width:100px!important;">
+			</div>
+
+		</div>
+
+
+		<div id="vai">
+			<img id="vai" class="arrrit" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-arrows/006764-3d-transparent-glass-icon-arrows-arrowhead-solid-right.png"onclick="setTimeout(function() {sildePlus();},200)" style="width:100px!important;">
+		</div>
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow2">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="0" dy="0" result="offsetblur"/>
+	        <feFlood flood-color="rgba(160,160,255,0.8)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+	</body>
+	<script type="text/javascript">
+
+		function Slide(zero, one, two, classe){
+			classe = classe || 'shad';
+			this.zero = zero;
+			this.one = one;
+			this.two = '<img class="'+classe+'" src="http://'+two+'">';
+		}
+
+		var slides = [ 
+			new Slide(
+				"1: Tela de Home",
+				"Ela é acessada clicando no cabeçalho da página.",
+				"i.imgur.com/bMFHueR.png"
+			),
+
+			new Slide(
+				"2: Entre na Aba 'Página'",
+		    	"Acima do cabeçalho, ao lado de procurar clique na aba página para visualizar o painel do próximo passo.",
+		    	'i.imgur.com/nH9lwtf.png'
+		    ),
+			
+			new Slide(
+		    	"3: Alertar-me > Gerenciar Meus Alertas",
+		    	"Clique no sino com titulo de Alertar-me e no menu que abrir clique em Gerenciar Meus Alertas.",
+				'i.imgur.com/p8KM0Gh.png'
+			),
+
+			new Slide(
+		    	"4: Adicionar Alerta",
+		    	"Clique em Adicionar Alerta para criar um novo Alerta.",
+				'i.imgur.com/sw0qusF.png'
+			),
+			new Slide(
+		    	"5: Marque a opção Falhas nas Emissoras e siga em 'próximo'",
+		    	"Marque o botão Falhas nas Emissoras (ou outra categoria que deseja receber alertas) role até o fim da página e clique em próximo.",
+				'i.imgur.com/Rtl3ilD.gif'
+			),
+			new Slide(
+		    	"6: Configurar e Confirmar",
+		    	"Configure o Alerta conforme desejar ou deixe como está, após isso confirme.",
+				'i.imgur.com/uz1trpA.png'
+			),
+			new Slide(
+		    	"Pronto!",
+		    	'Alertas configurados com sucesso! Você deverá receber um email confirmando o processo.<br> <img id="volta" class="arrlft" src="http://www.lawofattractiongoddess.com/wp-content/uploads/2015/05/left-double-arrow-silver-transparent.png" onclick="setTimeout(sildeHome,200)" style="width:100px !important">',
+				'sweetclipart.com/multisite/sweetclipart/files/imagecache/middle/check_mark_green_circle.png',
+				'fini'
+			)
+		];
+
+
+
+		var currentSlide = 0;
+
+		function show(button){
+			document.getElementById(button).style.visibility='visible';
+		}
+
+		function hide(button){
+			document.getElementById(button).style.visibility='hidden';
+		}
+
+		function refreshSlide(sld) {
+
+		    document.getElementById("title").innerHTML = slides[sld].zero;
+		    document.getElementById("helper").innerHTML = slides[sld].one;
+			document.getElementById("image").innerHTML = slides[sld].two;
+		}
+
+		function sildePlus() {
+		    currentSlide++;
+		    if (currentSlide > 7) {
+		        currentSlide = 0;
+		    }
+		    refreshSlide(currentSlide);
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+			if (currentSlide == 6){
+				hide('duasArr');
+				hide('voltaArr');
+			}
+		}
+
+		function sildeHome() {
+		    currentSlide = 0;
+		    refreshSlide(currentSlide);
+			hide('voltaArr');
+			show('duasArr');
+		}
+
+
+		function sildeMinus() {
+		    currentSlide--;
+
+		    if (currentSlide < 0) {
+		        currentSlide = 5;
+		    }
+
+		    refreshSlide(currentSlide);
+
+			console.log(currentSlide);
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+
+			if (currentSlide == 6){
+				hide('duasArr');
+			}
+		}
+
+
+		if (currentSlide == 0){
+			hide('voltaArr');
+		}
+
+		sildeHome();
+
+	</script>
+</html>
