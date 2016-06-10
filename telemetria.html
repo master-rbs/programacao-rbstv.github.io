@@ -181,7 +181,7 @@ var CHAVE = `
 Esta medida informa se quem está alimentando os Transmissores é o Gerador ( quando fechada) ou a Concessionária ( quando aberta )
 `;
 var LIGA_GMG = `
-Este comando quando acionado com um click, faz com que o Motor do Gerador ligue e automaticamente o Gerador passe a Alimentar os Transmissores. Para desfazer esta operação, basta clicar novamente e aguardar o automatismo reverter a situação, passando a ser alimentado pela Concessionária novamente, se esta estiver disponível
+Este comando quando acionado com um clique, faz com que o Motor do Gerador ligue e automaticamente o Gerador passe a Alimentar os Transmissores. Para desfazer esta operação, basta clicar novamente e aguardar o automatismo reverter a situação, passando a ser alimentado pela Concessionária novamente, se esta estiver disponível
 `;
 var PD_TX_PRINC = `
 Esta medida indica a potência que o Transmissor Principal Analógico (SD) entrega à Antena para Transmitir o sinal para os Telespectadores. Deve estar dentro de valores mínimos e máximos pré-estabelecidos. Quando alarmar indica que está fora destes parâmetros.
@@ -202,7 +202,7 @@ var PLL_TX_RES = `
 Esta medida indica uma importante informação do Transmissor Reserva Analógico SD, quando em alarme indica que está há algo errado no sistema.
 `;
 var TROCA_TX_ANALOG = `
-Este comando, permite que com um click o sistema transfira a operação do Transmissor Principal Analógico SD para o Transmissor Reserva Analógico SD.
+Este comando, permite que com um clique o sistema transfira a operação do Transmissor Principal Analógico SD para o Transmissor Reserva Analógico SD.
 `;
 var PD_TXD_PRINC = `
 Esta medida indica a potência que o Transmissor Principal Digital (HD) entrega à Antena para Transmitir o sinal para os Telespectadores. Deve estar dentro de valores mínimos e máximos pré-estabelecidos. Quando alarmar indica que está fora destes parâmetros.
@@ -214,10 +214,10 @@ var TXDP_CRITICAL = `
 Esta medida indica se existe algum alarme Crítico no Transmissor Principal Digital (HD) que pode afetar o sinal transmitido.
 `;
 var TXDP_ON = `
-Este comando permite ligar remotamente o Transmissor Principal Digital ( HD ) com um click.
+Este comando permite ligar remotamente o Transmissor Principal Digital ( HD ) com um clique.
 `;
 var TXDP_OFF = `
-Este comando permite desligar remotamente o Transmissor Principal Digital ( HD ) com um click.
+Este comando permite desligar remotamente o Transmissor Principal Digital ( HD ) com um clique.
 `;
 var PD_TXD_RES = `
 Esta medida indica a potência que o Transmissor Reserva Digital (HD) entrega à Antena para Transmitir o sinal para os Telespectadores, mas somente, se este equipamento necessitar entrar em operação. 
@@ -231,7 +231,7 @@ var TXDR_CRITICAL = `
 Esta medida indica se existe algum alarme Crítico no Transmissor Reserva Digital (HD) que pode afetar o sinal transmitido, se este estiver operando.
 `;
 var TXDR_ON = `
-Este comando permite ligar remotamente o Transmissor Reserva Digital ( HD ) com um click.
+Este comando permite ligar remotamente o Transmissor Reserva Digital ( HD ) com um clique.
 
 <br><span class="taito">Muito importante:<span><br>
 <p class="grey"> 
@@ -240,7 +240,7 @@ Se os dois Transmissores Digitais estiverem ligados ou desligados ao mesmo tempo
 </p>
 `;
 var TXDR_OFF = `
-Este comando permite desligar remotamente o Transmissor Reserva Digital ( HD ) com um click.
+Este comando permite desligar remotamente o Transmissor Reserva Digital ( HD ) com um clique.
 
 <br><span class="taito">Muito importante:<span><br>
 <p class="grey">
@@ -258,7 +258,7 @@ var VÍDEO_USO = `
 Esta medida informa qual dos sinais SD está em uso pelo Transmissor SD. Normalmente é o sinal do DECODER e o backup é MICRO-ONDAS
 `;
 var COMUTA_MICRO = `
-Este comando permite que seja alternado o sinal de vídeo e áudio entregue ao Transmissor Analógico SD entre o Principal ( DECODER )  e o BACKUP ( MICRO-ONDAS ), através de um click
+Este comando permite que seja alternado o sinal de vídeo e áudio entregue ao Transmissor Analógico SD entre o Principal ( DECODER )  e o BACKUP ( MICRO-ONDAS ), através de um clique
 `;
 var NB_CTA_IN = `
 Esta medida representa a tensão de ENTRADA de tensão 1 no Nobreak da Central Técnica da Emissora. Deve estar dentro de valores mínimos e máximos pré-estabelecidos. Quando alarmar indica que está fora destes parâmetros.
@@ -280,7 +280,7 @@ Deve estar dentro de valores mínimos e máximos pré-estabelecidos. Quando alar
 		
 
 
-var image = '<td class="mid"><img  width="50px" src="img/info.png""></td> <td>'
+var image = '<td class="mid"><img  width="50px" src="/img/info.png""></td> <td>'
 var close	=	'</td>'
 
 $('#energy_phases').popover({placement: 'bottom', content: image + energy_phases + close ,html: true});
