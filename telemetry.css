@@ -1,0 +1,340 @@
+
+  p {margin: 250px 30px 0 30px;}
+  body{background:white !important;}
+  
+.item:hover{
+border: solid #D33 2px;
+}
+
+
+.popover{
+max-width:500px !important;
+}
+.popover-title{font-weight:900 !important;}
+
+body{margin:0;}
+
+#panel{position:absolute;width:74em;z-index:2;
+  }
+  
+ .taito{
+	 font-weight:900;
+	 color:red;
+	 font-size: 10pt !important;
+	  }
+ p.grey{
+	 font-style:italic;
+	 color:#888;
+	 font-weight:200;
+	 font-size: 10pt !important;
+	 text-align: justify;
+	 text-indent: 12px;
+	 line-height: 12pt;
+	 margin:0;
+	 
+ }
+
+.bkg{
+width:100%;
+position:absolute;
+z-index:-1;
+}
+
+.mid{vertical-align:middle}
+
+td{padding: 5px;}
+
+
+
+
+
+
+
+
+
+
+			#energy_phases{
+
+position: absolute;
+left:.3%;
+top: 8.5em;
+height:6em;
+width:16.5em;
+}
+#tension_2{
+
+position: absolute;
+left:.3%;
+top: 15em;
+height:2em;
+width:16.5em;
+}
+#tension_3{
+
+position: absolute;
+left:.3%;
+top: 17.5em;
+height:2em;
+width:16.5em;
+}
+
+#USCA_phases{
+
+position: absolute;
+left:.3%;
+top: 23em;
+height:5.4em;
+width:16.5em;
+}
+#STS_USCA{
+
+position: absolute;
+left:.3%;
+top: 28.6em;
+height:1.5em;
+width:16.5em;
+}
+#STS_MOTOR{
+
+position: absolute;
+left:.3%;
+top: 30.3em;
+height:1.5em;
+width:16.5em;
+}
+			#DIESEL{
+
+position: absolute;
+left:.3%;
+top: 31.9em;
+height:1.5em;
+width:16.5em;
+}
+			#CHAVE{
+
+position: absolute;
+left:.3%;
+top: 33.5em;
+height:1.5em;
+width:16.5em;
+}
+#LIGA_GMG{
+
+position: absolute;
+left:.3%;
+top: 35.2em;
+height:1.5em;
+width:16.5em;
+}
+
+
+#PD_TX_PRINC{
+
+position: absolute;
+left:22.3%;
+top: 9em;
+height:9.4em;
+width:17.5em;
+}
+#PR_TX_PRINC{
+
+position: absolute;
+left:22.3%;
+top: 18.5em;
+height:1.7em;
+width:17.5em;
+}
+#PD_TX_RES{
+
+position: absolute;
+left:22.3%;
+top: 20.5em;
+height:9.5em;
+width:17.5em;
+}
+			#VIDEO_TX_RES{
+
+position: absolute;
+left:22.3%;
+top: 30.2em;
+height:1.5em;
+width:17.5em;
+}
+			#PLL_TX_RES{
+
+position: absolute;
+left:22.3%;
+top: 31.8em;
+height:1.5em;
+width:17.5em;
+}
+			#TROCA_TX_ANALOG{
+
+position: absolute;
+left:22.3%;
+top: 33.2em;
+height:3.7em;
+width:17.5em;
+}
+
+
+
+			#PD_TXD_PRINC{
+
+position: absolute;
+left:50%;
+top: 9.2em;
+height:3.9em;
+width:18.5em;
+}
+			#PR_TXD_PRINC{
+
+position: absolute;
+left:50%;
+top: 13em;
+height:2.2em;
+width:18.5em;
+}
+#TXDP_CRITICAL{
+
+position: absolute;
+left:50%;
+top: 15.1em;
+height:2.2em;
+width:18.5em;
+}
+			#TXDP_ON{
+
+position: absolute;
+left:50%;
+top: 17.4em;
+height:2.2em;
+width:8.5em;
+}
+			#TXDP_OFF{
+
+position: absolute;
+left:61.5%;
+top: 17.4em;
+height:2.2em;
+width:8.5em;
+}
+			#PD_TXD_RES{
+
+position: absolute;
+left:50%;
+top: 20.5em;
+height:3.9em;
+width:18.5em;
+}
+			#PR_TXD_RES{
+
+position: absolute;
+left:50%;
+top: 24.4em;
+height:2.2em;
+width:18.5em;
+}
+#TXDR_CRITICAL{
+
+position: absolute;
+left:50%;
+top: 26.6em;
+height:2.2em;
+width:18.5em;
+}
+			#TXDR_ON{
+
+position: absolute;
+left:50%;
+top: 29em;
+height:2em;
+width:8.5em;
+}
+			#TXDR_OFF{
+
+position: absolute;
+left:61.5%;
+top: 29em;
+height:2em;
+width:9em;
+}
+
+
+			#VIDEO_DECODER{
+
+position: absolute;
+left:22.3%;
+top: 39.9em;
+height:2.5em;
+width:17.5em;
+}
+			#VIDEO_MICRO{
+
+position: absolute;
+left:22.3%;
+top: 42.5em;
+height:2.3em;
+width:17.5em;
+}
+#VÍDEO_USO{
+
+position: absolute;
+left:22.3%;
+top: 44.9em;
+height:3em;
+width:19em;
+}
+#COMUTA_MICRO{
+
+position: absolute;
+left:22.3%;
+top: 48em;
+height:3em;
+width:15em;
+}
+
+			#NB_CTA_IN{
+
+position: absolute;
+left:75.5%;
+top: 9em;
+height:5.5em;
+width:18.5em;
+}
+			#NB_CTA_OUT{
+
+position: absolute;
+left:75.5%;
+top: 15em;
+height:5.5em;
+width:18.5em;
+}
+
+			#NB_TX_IN{
+
+position: absolute;
+left:75.5%;
+top: 23em;
+height:6em;
+width:18.5em;
+}
+			#NB_TX_OUT{
+
+position: absolute;
+left:75.5%;
+top: 29.5em;
+height:6em;
+width:18.5em;
+}
+
+#roomtemp{
+
+position: absolute;
+left:75.5%;
+top: 39.5em;
+height:8em;
+width:18.5em;
+}
+			
+			

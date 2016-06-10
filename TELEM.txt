@@ -1,0 +1,204 @@
+			#energy_phases{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#tension_3{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#USCA_phases{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#STS_USCA{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#STS_MOTOR{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#DIESEL{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#CHAVE{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#LIGA_GMG{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PD_TX_PRINC{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PR_TX_PRIN{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PD_TX_RES{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#VIDEO_TX_RES{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PLL_TX_RES{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TROCA_TX_ANALOG{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}
+
+
+			#PD_TXD_PRINC{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PR_TXD_PRIN{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDP_CRITICAL{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDP_ON{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDP_OFF{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PD_TXD_RES{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#PR_TXD_RES{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDP_CRITICAL{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDR_ON{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#TXDR_OFF{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#VIDEO_DECODER{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#VIDEO_MICRO{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#VÍDEO_USO{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#COMUTA__MICRO{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#NB_CTA_IN{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#NB_CTA_OUT{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#NB_TX_IN{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#NB_TX_OUT{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}			#roomtemp{
+position: absolute;
+margin-left:22.3%;
+margin-top: 7.5em;
+height:13.2em;
+width:17.5em;
+}
+			
+			
