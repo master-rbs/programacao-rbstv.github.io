@@ -104,6 +104,7 @@
 			<div id="PD_TX_RES" class="btn item" rel="popover"  data-trigger="click"		title="Transmissor Reserva Analógico"> </div>
 			<div id="VIDEO_TX_RES" class="btn item" rel="popover"  data-trigger="click"		title="Presença de Video"> </div>
 			<div id="PLL_TX_RES" class="btn item" rel="popover"  data-trigger="click"		title="Presença de Informação"> </div>
+			<div id="RELE_COAX" class="btn item" rel="popover"  data-trigger="click"		title="Relé Coaxial"> </div>
 			<div id="TROCA_TX_ANALOG" class="btn item" rel="popover"  data-trigger="click"		title="Transferir Analog Principal >> Reserva"> </div>
 
 
@@ -248,6 +249,9 @@ Ao ligar o Transmissor Reserva Digital é necessário também desligar o Transmi
 Se os dois Transmissores Digitais estiverem ligados ou desligados ao mesmo tempo, o sinal não chega aos telespectadores.
 </p>
 `;
+var RELE_COAX = `
+Esta medida informa qual o transmissor <b>Analógico SD</b> está no ar, <b>PRINCIPAL</b> ou <b>RESERVA</b>.
+`;
 var VIDEO_DECODER = `
 Esta medida informa a condição de presença de sincronismo do DECODER IP SD. Quando em alarme, irá gerar uma troca automática do sinal de VIDEO EM USO para MICRO-ONDAS. 
 `;
@@ -298,6 +302,7 @@ $('#PD_TX_RES').popover({placement: 'bottom', content: image + PD_TX_RES + close
 $('#VIDEO_TX_RES').popover({placement: 'bottom', content: image + VIDEO_TX_RES + close ,html: true});
 $('#PLL_TX_RES').popover({placement: 'bottom', content: image + PLL_TX_RES + close ,html: true});
 $('#TROCA_TX_ANALOG').popover({placement: 'bottom', content: image + TROCA_TX_ANALOG + close ,html: true});
+$('#RELE_COAX').popover({placement: 'bottom', content: image + RELE_COAX + close ,html: true});
 $('#PD_TXD_PRINC').popover({placement: 'bottom', content: image + PD_TXD_PRINC + close ,html: true});
 $('#PR_TXD_PRINC').popover({placement: 'bottom', content: image + PR_TXD_PRINC + close ,html: true});
 $('#TXDP_CRITICAL').popover({placement: 'bottom', content: image + TXDP_CRITICAL + close ,html: true});

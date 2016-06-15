@@ -172,11 +172,18 @@ width:17.5em;
 
 position: absolute;
 left:22.3%;
-top: 33.2em;
-height:3.7em;
+top: 35.2em;
+height:1.7em;
 width:17.5em;
 }
+#RELE_COAX{
 
+position: absolute;
+left:22.3%;
+top: 33.2em;
+height:1.9em;
+width:17.5em;
+}
 
 
 			#PD_TXD_PRINC{
