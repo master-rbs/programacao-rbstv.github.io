@@ -1,0 +1,90 @@
+---
+layout: mainboard
+---
+
+<h1><center>UNDER MAINTENANCE</center></h1>
+<h2><center>Last build: {{ site.time }}</center></h2>
+
+{% for myth in site.data.myths %}
+{% if myth.tagId == 'flike' %}
+    <span id="agatha"></span>
+    <span id="{{ myth.tagId }}"></span>
+{% elsif myth.tagId == 'agatha' %}
+    <span id="dead"></span>
+{% else %}
+    <span id="{{ myth.tagId }}"></span>
+{% endif %}
+<table class="tg active-{{ myth.active }}" style="table-layout: margin-bottom: 10px; fixed; width: 100%">
+    <colgroup>
+        <col style="width: 50px">
+        <col style="width: 150px">
+    </colgroup>
+    <thead>
+    <!-- CREST ICON -->
+        <th class="crest">
+        {% for crest in site.data.crests %}
+            {% if myth.crest == crest.id %}
+            <img class="crestpic" title="{{ crest.title }}" src="{{ site.assets }}/crests/{{ crest.id }}.png">
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        </th>
+        <!-- NAME -->
+        <th align="left" class="name" colspan="3"><a href="#{{ myth.tagId }}">{{ myth.nome }}</a></th> <!-- Espacinho -->
+        <!-- TIER -->
+        <th align="left" class="tiername">
+    {% for tier in site.data.tiers %}
+        {% if myth.tier == tier.id %}
+            <span class="tierlevel">{{ tier.level }}</span>Tier: <strong>{{ tier.title }}</strong></th>
+        <th align="right" class="tiericon">
+            <div>
+                <img class="tier" title="{{ tier.title }}" src="{{ site.assets }}/tiers/{{ tier.img }}.png">
+            </div>
+            {% break %}
+        {% endif %}
+    {% endfor %}
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- PROFILE PIC -->
+            <td align="center" class="profilepic" colspan="2" rowspan="5">
+                <a target="_blank" href="https://www.facebook.com/{{ myth.faceId }}">
+                    <img class="profile" src="http://graph.facebook.com/{{ myth.faceId }}/picture?width=151&height=151">
+                </a>
+            </td>
+            <tr>
+                <td HEIGHT="1px" colspan="2" ></td>
+            </tr>
+            <td class="tg-e3zv">
+                Badges
+            </td>
+            <td class="tg-031e"></td>
+            <td class="since" align="right"  colspan="3" >
+                Mitando since  <strong class="mythano">{{ myth.ano }}</strong>
+            </td>
+        </tr>
+        <tr>
+            <!-- BADGES -->
+            <td class="badges" id="{{ myth.tagId }}-badges" colspan="4">
+    {% for badge in myth.badges %}
+        {% for badgeinfo in site.data.badges %}
+            {% if badge == badgeinfo.id %}
+                <img class="badgeicon" title="{{ badgeinfo.title }}" src="{{ site.assets }}/badges/{{ badgeinfo.img }}.png">
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td class="badges"></td>
+            <td class="badges"></td>
+            <td colspan="2" align="right" class="badges2">
+                <i>Badges Coletadas:</i>
+                <b id="{{ myth.tagId }}-badge-count">{{ myth.badges | size }}</b>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endfor %}
