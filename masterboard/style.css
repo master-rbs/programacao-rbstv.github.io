@@ -325,7 +325,7 @@ background-color: #00F;
         right: 510px;
 }
 #tabelas{
-
+  display: none;
 }
 .tierlevel{
   color: rgba(0,0,0,0);
@@ -342,8 +342,4 @@ background-color: #00F;
     left:0px;
     right:0px;
     bottom:0px
-}
-
-table.tg.active-false {
-    opacity: 0.3;
 }
