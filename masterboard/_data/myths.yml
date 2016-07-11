@@ -1,0 +1,823 @@
+####################
+#  Mitos Database  #
+####################
+-   nome: Alex
+    tagId: foffano
+    tier: tierUnicorn
+    active: true
+    faceId: 100003209675392
+    ano: 2013 Novembro
+    race: Doge
+    skill: ???
+    fullname: Alex Carvalho
+    alias: Foffano
+    crest: nocrest
+    badges:
+        - mythUnicorn
+        - preHistoric
+
+-   nome: Agatha
+    tagId: agatha
+    active: dead
+    faceId: 100006709956847
+    tier: tierFreshman
+    ano: 2015 Julho
+    race: Human
+    skill: ???
+    fullname: Agatha Klein
+    alias: Gatha
+    crest: nocrest
+    badges:
+        - cClaro
+        - mythFresh
+        - mythHonorary
+        - vassouraWielder
+        - defiance
+
+-   nome: Ana
+    tagId: yomiell
+    active: false
+    faceId: 100002387089895
+    tier: tierGhost
+    ano: 2014 Novembro
+    race: Cat
+    skill: Dormir
+    fullname: Ana Beatriz Silva Oliveira
+    alias: Yomiell
+    crest: yomi
+    badges:
+        - mythGhost
+        - preHistoric
+        - jogueiro
+        - hangouteiro
+        - desenheiro
+        - goldenPen
+        - cah
+        - vassouraWielder
+        - 3dsPlay
+        - defiance
+        - miauCaralho
+        - idea
+        - gartic
+        - nekomimi
+        - deceased
+
+-   nome: Ana Errada
+    tagId: anaerrada
+    active: false
+    faceId: 100007384087758
+    tier: tierUnicorn
+    ano: 2015
+    crest: nocrest
+    badges:
+        - mythUnicorn
+        - cVinicius
+        - gartic
+
+-   nome: Aragão
+    tagId: aragao
+    active: true
+    faceId: 100002629782907
+    tier: tierLegacy
+    ano: 2013 Setembro
+    race: Human
+    skill: ???
+    fullname: Sérgio Aragão
+    alias: Aragorness
+    crest: nocrest
+    badges:
+        - mythLegacy
+        - hangouteiro
+        - jogueiro
+        - gartic
+        - vassouraWielder
+        - streameiro
+        - pauHd
+        - skgPart
+        - ygo
+        - steam
+
+-   nome: Arthur Zero
+    tagId: arthur
+    active: true
+    faceId: 100000504458978
+    tier: tierGold
+    ano: 2015 Maio
+    crest: zero
+    race: Human
+    skill: Fazer Pipoca
+    fullname: Arthur Lima
+    alias: Zero
+    badges:
+        - mythGold
+        - cFlicky
+        - jogueiro
+        - pipoqueiro
+        - cah
+        - idea
+        - plugDj
+        - mitopg
+        - drillsoura
+        - steam
+
+-   nome: Bárbara Bárbara
+    tagId: barbara
+    active: false
+    faceId: 100002486446403
+    tier: tierFreshman
+    ano: 2015
+    crest: nocrest
+    badges:
+        - mythFresh
+        - cDouglas
+
+-   nome: Bruna
+    tagId: bruna
+    active: false
+    faceId: 100004056698492
+    tier: tierGuest
+    ano: 2015 Abril
+    race: Tree
+    skill: Sou
+    fullname: Bruna Elias
+    alias: Yggydrasil
+    crest: nocrest
+    badges:
+        - mythGuest
+        - cFlicky
+
+-   nome: Camila
+    tagId: cpaolucci
+    active: true
+    faceId: 100003844416725
+    tier: tierLurker
+    ano: 2015 Junho
+    race: Human
+    skill: ???
+    fullname: Camila Paolucci
+    alias: Milla, Lucci
+    crest: nocrest
+    badges:
+        - mythLurker
+        - cZero
+        - mitopg
+
+-   nome: Cesar
+    tagId: rasec
+    active: true
+    faceId: 100011628151642
+    tier: tierHonorary
+    ano: 2014 Junho
+    crest: rasec
+    race: Human
+    skill: ???
+    fullname: César Augusto
+    alias: Rasecsyn
+    badges:
+        - mythHonorary
+        - cFlicky
+        - mythLurker
+        - radiant
+        - encontroMyth
+        - smashFesteiro
+        - smashFest2014
+        - doraFest2015
+        - lendsClub
+        - jogueiro
+        - skgPart
+
+-   nome: Claro
+    tagId: claro
+    active: true
+    faceId: 100000481675563
+    tier: tierPlatinum
+    ano: 2014 Dezembro
+    crest: claro
+    race: Titan
+    skill: Soco Mecânico
+    fullname: Matheus Claro
+    alias: Spyril4
+    badges:
+        - mythPlatinum
+        - mechanicPunch
+        - hangouteiro
+        - defiance
+        - cah
+        - vassouraWielder
+        - cGors
+        - programeiro
+        - jogueiro
+        - skgPart
+        - essetop
+        - ygo
+        - idea
+        - help
+        - pepe
+        - gartic
+        - rplay
+        - likeBomb
+        - plugDj
+        - harass
+        - mitopg
+        - mitrade
+        - steam
+
+-   nome: Coelho
+    tagId: coelho
+    active: false
+    faceId: 741852426
+    tier: tierLegacy
+    ano: 2013 Setembro
+    race: Fairy
+    skill: Cupid
+    fullname: Felipe Coelho
+    alias: BlackLabHorus, Estragaonofre
+    crest: nocrest
+    badges:
+        - mythLegacy
+        - mythGhost
+        - cupidRab
+        - ps2
+        - ps3
+        - frukiFest
+        - streameiro
+        - karaoke
+        - smashFest2014
+        - 3dsPlay
+        - elder
+
+-   nome: Davi
+    tagId: davi
+    active: true
+    faceId: 100000350561525
+    tier: tierFreshman
+    ano: 2015 Julho
+    race: Human
+    skill: ???
+    fullname: Davi Carvalhido
+    alias: Liu Kang
+    crest: nocrest
+    badges:
+        - mythFresh
+        - cClaro
+
+-   nome: Douglas
+    tagId: douglas
+    active: true
+    faceId: 100002084300385
+    tier: tierGold
+    ano: 2015 Maio
+    race: Human
+    skill: Q
+    fullname: Douglas Savi Mondo Fogaça
+    alias: Dogolas
+    crest: qqq
+    badges:
+        - mythGold
+        - merito
+        - hangouteiro
+        - ygo
+        - qqq
+        - plugDj
+        - rplay
+        - desenheiro
+        - mitrade
+        - maid
+
+-   nome: Fernando
+    tagId: duodyn
+    active: false
+    faceId: 100000141297181
+    tier: tierHonorary
+    ano: 2014 Abril
+    race: Maverick
+    skill: ???
+    fullname: Fernando Lopes
+    alias: DuoDynamo
+    crest: nocrest
+    badges:
+        - mythHonorary
+        - mythGhost
+        - essetop
+        - cGors
+        - hangouteiro
+        - karaoke
+
+-   nome: Flicky
+    tagId: flike
+    active: true
+    faceId: 1489576273
+    tier: tierMinister
+    ano: 2013 Agosto
+    crest: hood
+    race: Machine
+    skill: Todas menos Algumas
+    fullname: Lucas Flicky
+    alias: Flocos
+    badges:
+        - mythPrime
+        - mythMinister
+        - desenheiro
+        - preHistoric
+        - jogueiro
+        - radiant
+        - fuQuest
+        - hangouteiro
+        - cah
+        - help
+        - genesis
+        - frukiFest
+        - vassouraWielder
+        - encontroMyth
+        - gardevoa
+        - gartic
+        - streameiro
+        - steam
+        - karaoke
+        - essetop
+        - smashFest2014
+        - doraFest2015
+        - kanaFest
+        - programeiro
+        - 3dsPlay
+        - lendsClub
+        - rplay
+        - skgPart
+        - ygo
+        - plugDj
+        - harass
+        - mitamores
+        - mitrade
+        - mitopg
+
+-   nome: Gabriel
+    tagId: gabriel
+    active: true
+    faceId: 100003090554200
+    tier: tierSilver
+    ano: 2015 Junho
+    race: Porteiro
+    skill: Mandar Nudes
+    fullname: Gabriel Freire
+    alias: Freire, Biel
+    crest: nocrest
+    badges:
+        - mythEvent
+        - mythSilver
+        - gartic
+        - jogueiro
+        - hangouteiro
+        - harass
+        - plugDj
+
+-   nome: Gabriell
+    tagId: gabriell
+    active: true
+    faceId: 100001122246638
+    tier: tierFreshman
+    ano: 2015 Dezembro
+    race: Human
+    skill: Inútil
+    fullname: Gabriel Henrique
+    alias: Henrique, Gabriel
+    crest: nocrest
+    badges:
+        - mythFresh
+        - cDouglas
+
+-   nome: Garland
+    tagId: garland
+    active: true
+    faceId: 100003138536144
+    tier: tierHonorary
+    ano:  2014 Outubro
+    crest: mage
+    race: Mage
+    skill: Bruxaria
+    fullname: Bernardo Alvarez Braga
+    alias: Bê
+    badges:
+        - mythHonorary
+        - encontroMyth
+        - mythLurker
+        - cFlicky
+        - smashFest2014
+        - steam
+
+-   nome: Herbe
+    tagId: herbe
+    active: true
+    faceId: 100000980181670
+    tier: tierGhost
+    ano: 2013
+    crest: herb
+    badges:
+        - mythPrime
+        - frukiFest
+        - encontroMyth
+        - smashFesteiro
+        - vassouraWielder
+        - essetop
+        - smashFest2014
+        - doraFest2015
+        - harass
+        - 3dsPlay
+        - lendsClub
+        - deceased
+
+-   nome: Karen
+    tagId: karen
+    active: true
+    faceId: 100002543640185
+    tier: tierGhost
+    ano: 2014 Maio
+    race: Human
+    skill: ???
+    fullname: Karen Sama
+    alias: Carem
+    crest: nocrest
+    badges:
+        - mythGhost
+        - preHistoric
+        - n64
+        - cah
+        - happyDoor
+        - radiant
+        - smashFesteiro
+        - encontroMyth
+        - smashFest2014
+
+-   nome: Keidi
+    tagId: keidi
+    active: false
+    faceId: 100000119298271
+    tier: tierUnicorn
+    ano: 2015 Maio
+    race: Mijão
+    skill: Print
+    fullname: Keidi Hasegawa
+    alias: Keig
+    crest: nocrest
+    badges:
+        - mythUnicorn
+        - cAna
+        - keidiPint
+        - streameiro
+        - kanaFest
+        - jogueiro
+        - skgPart
+        - plugDj
+        - steam
+        - deceased
+
+-   nome: Luana
+    tagId: luana
+    active: true
+    faceId: 100001019850664
+    tier: tierHonorary
+    ano:  2014 Fevereiro
+    race: Human
+    skill: Dois Potes
+    fullname: Luana Reis
+    alias: _reisluana
+    crest: nocrest
+    badges:
+        - mythHonorary
+        - encontroMyth
+        - doisPotes
+        - cFlicky
+        - radiant
+        - harass
+        - frukiFest
+        - lendsClub
+        - deceased
+
+-   nome: Mario Verde
+    tagId: luiggi
+    active: false
+    faceId: 1413967158
+    tier: tierFreshman
+    ano: 2015 Junho
+    race: Human
+    skill: ???
+    fullname: Luiggi Ligocky
+    alias: Afro
+    crest: nocrest
+    badges:
+        - mythFresh
+        - cGarland
+
+-   nome: Marcela
+    tagId: marcela
+    active: true
+    faceId: 100002119416291
+    tier: tierGhost
+    ano:  2014 Novembro
+    race: Undead
+    skill: ???
+    fullname: Marcela Marcelino
+    alias: Marceline
+    crest: nocrest
+    badges:
+        - mythGhost
+        - cFlicky
+
+-   nome: Pall
+    tagId: pall
+    active: true
+    faceId: 1591210799
+    tier: tierLegacy
+    ano:  2013 Setembro
+    crest: pall
+    race: Human
+    skill: '!!!'
+    fullname: Mariana Espinosa Pall
+    alias: Maripall
+    badges:
+        - mythLegacy
+        - mythSilver
+        - desenheiro
+        - mitamores
+        - karaoke
+        - gartic
+        - jogueiro
+        - ps3
+        - hangouteiro
+        - cah
+        - streameiro
+        - 3dsPlay
+        - likeBomb
+        - ps4
+        - mariEx
+        - plugDj
+        - mitrade
+        - mitopg
+
+-   nome: Pamela
+    tagId: pam
+    active: true
+    faceId: 100003518568433
+    crest: pam
+    tier: tierMinister
+    ano: 2015 Maio
+    race: Demi-Cat
+    skill: poke
+    fullname: Pamela Grether
+    alias: PamGreta, Kerria
+    badges:
+        - mythDiamond
+        - mythMinister
+        - cPall
+        - defiance
+        - vassouraWielder
+        - desenheiro
+        - rplay
+        - essetop
+        - goldenPen
+        - jogueiro
+        - hangouteiro
+        - idea
+        - harass
+        - gartic
+        - poke
+        - plugDj
+        - mitamores
+        - help
+        - maid
+        - mitrade
+        - mitopg
+        - nekomimi
+        - steam
+        - lendsClub
+        - doraFest2015
+
+-   nome: Raptor
+    tagId: raptor
+    active: true
+    faceId: 100010429817165
+    tier: tierSilver
+    ano: 2015 Junho
+    race: Dinossauro
+    skill: Birutisse
+    fullname: David Raptor, O Mascote
+    alias: Raptor
+    crest: nocrest
+    badges:
+        - mythSilver
+        - cHerbe
+        - nennys
+        - defiance
+        - ygo
+        - desenheiro
+        - hangouteiro
+        - 3dsPlay
+        - deceased
+
+-   nome: Rômulo
+    tagId: romulo
+    active: true
+    faceId: 100001228879580
+    tier: tierGhost
+    ano:  2015 Junho
+    race: Human
+    skill: Samangada
+    fullname: Rômulo Ventura
+    alias: Romulosama
+    crest: nocrest
+    badges:
+        - mythLurker
+        - cClaro
+        - pepe
+        - frog
+
+-   nome: Switch
+    tagId: rubens
+    active: true
+    faceId: 100002312675503
+    tier: tierUnicorn
+    ano:  2015 Março
+    race: Android
+    skill: ???
+    fullname: Rubens Salvador
+    alias: Switch Z
+    crest: nocrest
+    badges:
+        - mythUnicorn
+        - cClaro
+        - kanaFest
+
+-   nome: Tairine
+    tagId: tairine
+    active: true
+    faceId: 100000251671306
+    tier: tierFreshman
+    ano: 2015
+    crest: nocrest
+    badges:
+        - mythFresh
+        - doraFest2015
+
+-   nome: Toshiaki
+    tagId: toshiaki
+    active: false
+    faceId: 100000410405406
+    tier: tierUnicorn
+    ano: 2015 Março
+    race: Human
+    skill: Toshiakadas
+    fullname: Thiago Toshiaki
+    alias: ToshiakiBR, Teriyaki
+    crest: nocrest
+    badges:
+        - mythUnicorn
+        - jogueiro
+        - likeBomb
+        - help
+        - karaoke
+        - encontroMyth
+        - steam
+
+-   nome: Tumeo
+    tagId: tunel
+    active: true
+    faceId: 100001156867316
+    tier: tierMinister
+    ano: 2015 Abril
+    race: Construção Pública
+    skill: ???
+    fullname: William Tuméo
+    alias: Túnel
+    crest: nocrest
+    badges:
+        - mythDiamond
+        - mythMinister
+        - merito
+        - programeiro
+        - kanaFest
+        - essetop
+        - redCoder
+        - vassouraWielder
+        - jogueiro
+        - help
+        - idea
+        - gartic
+        - tumeoEx
+        - tunelaa
+        - mitrade
+        - steam
+        - maid
+        - doraFest2015
+
+-   nome: Vidal
+    tagId: vidal
+    active: true
+    faceId: 100000652608528
+    tier: tierSilver
+    ano:  2015 Janeiro
+    race: Relativista
+    skill: P-p-p-pessoas
+    fullname: Ricardo Vidal
+    alias: RicsVidal
+    crest: nocrest
+    badges:
+        - mythSilver
+        - encontroMyth
+        - cHerbe
+        - smashFesteiro
+        - smashFest2014
+        - doraFest2015
+        - matricialPrint
+        - 3dsPlay
+        - likeBomb
+        - vidalGt
+        - lendsClub
+        - vidalFdp
+        - plugDj
+        - mitopg
+
+-   nome: Vinicius
+    tagId: vinicius
+    active: true
+    faceId: 100002623130922
+    crest: vkps
+    tier: tierUnicorn
+    ano:  2013 Outubro
+    race: Human
+    skill: VSF
+    fullname: Vinicius Kleinsorgen
+    alias: Vinólia, Vinóculos, Vkps
+    badges:
+        - mythLegacy
+        - mythUnicorn
+        - preHistoric
+        - jogueiro
+        - fuQuest
+        - wii
+        - radiant
+        - frukiFest
+        - hangouteiro
+        - musicist
+        - gartic
+        - encontroMyth
+        - smashFesteiro
+        - smashFest2014
+        - doraFest2015
+        - 3dsPlay
+        - lendsClub
+        - cah
+        - mitrade
+        - cleosvaldo
+        - steam
+
+-   nome: Watanabe
+    tagId: gors
+    active: true
+    faceId: 100003656546830
+    tier: tierDiamond
+    ano: 2013 Outubro
+    crest: gors
+    race: Projectile
+    skill: Overmito
+    fullname: William Watanabe
+    alias: Gorsal
+    badges:
+        - mythLegacy
+        - mythDiamond
+        - preHistoric
+        - desenheiro
+        - jogueiro
+        - fuQuest
+        - frukiFest
+        - radiant
+        - hangouteiro
+        - gartic
+        - encontroMyth
+        - streameiro
+        - smashFesteiro
+        - cah
+        - 3dsPlay
+        - smashFest2014
+        - wataZomb
+        - kanaFest
+        - musicist
+        - likeBomb
+        - goldenPen
+        - help
+        - mitrade
+
+-   nome: Wolvie
+    tagId: wolvie
+    active: true
+    faceId: 100003103308138
+    tier: tierLurker
+    ano: 2015 Abril
+    race: Viking
+    skill: Batata
+    fullname: Douglas Medeiros
+    alias: Wolvie
+    crest: nocrest
+    badges:
+        - mythLurker
+        - cCesar
+        - encontroMyth
+        - mitopg
