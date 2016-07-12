@@ -327,7 +327,12 @@ a{text-decoration: none}
 		width:100%;
 	}
 
-.divbut:hover{
+.divbut:hover,{
+	background:#225DAE;
+	cursor:pointer;
+	color:white;
+
+}.divbutb:hover,{
 	background:#225DAE;
 	cursor:pointer;
 	color:white;
@@ -337,14 +342,14 @@ a{text-decoration: none}
 .menuitema:hover{
 	background: #2255aa
 }
-.divbut,.divbutb{
+.divbut, .divbutb{
 	border-radius:10px;
 	transition:all 500ms ease;
 	
 }
 
-a .divbut{	color:#777 !important;}
-a .divbutb{	color:#777!important;}
+a .divbut{	color:#777 ;}
+a .divbutb{	color:#777;}
 	.boxA,
 	.boxB
 	{
