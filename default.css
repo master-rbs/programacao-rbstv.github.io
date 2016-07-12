@@ -6,11 +6,16 @@
     position: relative;
 float:right;
 bottom:5em;
+     color: white !important;
+}
+ .T2:hover{
+   background:#143580
 }
  .T3{
  position: relative;
 float:right;
 bottom:0em;
+          color: white !important;
 }
 .pIMG{
     float: left;
@@ -237,6 +242,7 @@ bottom:0em;
 		font-size: 1em;
 		color: #FFF;
 		border-radius: 5px;
+             color: white !important;
 	}
 	.logo{
 		height: 2.1em;
@@ -306,7 +312,7 @@ bottom:0em;
 /* 3-column                                                                      */
 /*********************************************************************************/
 
-.divbut:active{
+.divbut:active, .divbutb:active{
 	background:#224D8E !important;
 	box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
 	transition: all 100ms;
@@ -314,6 +320,7 @@ bottom:0em;
 	text-shadow: 0 0 1px rgba(255,255,255,.5)
 }
 a{text-decoration: none}
+
 
 	.boxA,
 	.boxB,
@@ -327,17 +334,17 @@ a{text-decoration: none}
 		width:100%;
 	}
 
-.divbut:hover,{
+.divbut:hover{
 	background:#225DAE;
 	cursor:pointer;
 	color:white;
-
-}.divbutb:hover,{
-	background:#225DAE;
-	cursor:pointer;
-	color:white;
-
 }
+.divbutb:hover{
+	background:#6991c7;
+	cursor:pointer;
+	color:white;
+}
+
 
 .menuitema:hover{
 	background: #2255aa
@@ -347,8 +354,9 @@ a{text-decoration: none}
 	transition:all 500ms ease;
 	
 }
+a:visited{color:inherit}
 
-a .divbut{	color:#777 ;}
+ a .divbut{	color:#777 ;}
 a .divbutb{	color:#777;}
 	.boxA,
 	.boxB
