@@ -340,13 +340,14 @@ a{text-decoration: none}
 .menuitema:hover{
 	background: #2255aa
 }
-.divbut{
+.divbut,.divbutb{
 	border-radius:10px;
 	transition:all 500ms ease;
 	
 }
-a .divbut{	color:#777;}
 
+a .divbut {	color:#777;}
+a .divbutb{	color:#777;}
 	.boxA,
 	.boxB
 	{
