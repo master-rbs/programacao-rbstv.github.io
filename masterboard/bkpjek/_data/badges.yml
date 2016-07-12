@@ -1,0 +1,37 @@
+#####################
+#  Badges Database  #
+#####################
+-   id: _database/mythUnicorn
+    title: Mitador Unicorn - Raros porém participativos
+    img: uni
+    value: 2
+
+-   id: _database/mythPlatinum
+    title: Mitador Platinum
+    img: plat
+    value: 2
+
+-   id: _database/mythDiamond
+    title: Mitador Diamond - Amor à camisa
+    img: diamond
+    value: 8
+
+-   id: _database/mythMinister
+    title: _database/mythnister - Leading the path of strife!
+    img: minister
+    value: 2
+
+-   id: _database/mythSilver
+    title: Mitador Silver
+    img: silver
+    value: 2
+
+-   id: _database/mythLegacy
+    title: Mitador Legacy - Veterano dos primórdios!
+    img: legacy
+    value: 2
+
+-   id: _database/mythFresh
+    title: Freshman - Mitadores Trainee
+    img: fresh
+    value: 2

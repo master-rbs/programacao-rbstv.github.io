@@ -1,0 +1,35 @@
+####################
+#  Mitos Database  #
+####################
+
+-   nome: Diego
+    tagId: diego_fulaneto
+    tier: tierUnicorn
+    active: true
+    join:  ???
+    fullname: Diego Fulaneto
+    img:
+    crest:
+    badges:
+
+-   nome: Kyomma
+    tagId: kyomma_soares
+    tier: tierUnicorn
+    active: true
+    join:
+    fullname: Kyomma Soares
+    img:
+    crest:
+    badges:
+
+-   nome: Lucas
+    tagId: flk
+    tier: tierUnicorn
+    active: true
+    join:
+    fullname: Lucas Oliveira
+    img:
+    crest:
+   badges:
+        - _database/mythUnicorn
+        - _database/mythPrime
