@@ -97,10 +97,7 @@ bottom:0em;
 	{
 	}
 	
-	a
-	{
-		color: #0000FF;
-	}
+
 	
 	a:hover
 	{
@@ -346,8 +343,8 @@ a{text-decoration: none}
 	
 }
 
-a .divbut {	color:#777;}
-a .divbutb{	color:#777;}
+a .divbut{	color:#777 !important;}
+a .divbutb{	color:#777!important;}
 	.boxA,
 	.boxB
 	{
