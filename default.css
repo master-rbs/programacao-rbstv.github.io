@@ -14,14 +14,15 @@ bottom:5em;
  .T3{
  position: relative;
 float:right;
-bottom:0em;
-          color: white !important;
+bottom:-5em;
+          color: #aaa !important;
 }
 .pIMG{
     float: left;
    margin:1em 1em 2em 1em ;
     border-radius: 12px;
-    height:200px;
+   max-height:200px;
+	max-width:200px;
 }
 .pTitle{
     font-weight: 900;
@@ -38,15 +39,11 @@ bottom:0em;
 	padding: 3em 2em 2em 2em;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 8px;
-		text-align: center;
+	text-align: center;
+	display: inline-block;
+	width:30%;
 }
-.boxie{
-    	padding:1em 1em 5em 1em;
-	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 8px;
- text-align: left;
 
-}
 
 	body
 	{
@@ -57,8 +54,23 @@ bottom:0em;
 		font-size: 11pt;
 		font-weight: 300;
 		color: #656565;
+
+
+
 	}
+#three-column{
+	width: 90%;
+  padding: 5em 0em 0em 0em;
+  margin: auto;
+text-align: center;
+	box-shadow: 0px 0px 13px #AAA;
+	background:#FFF;
 	
+	padding-bottom: 8em;
+}
+.summit{
+	padding-bottom: 58em !important;
+}
 	.sidenote{
 	color:#FAA !important;
 	font-size:10pt;
@@ -113,8 +125,10 @@ bottom:0em;
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1000px;
+		width: 100%;
+
 	}
+#extra{	 background: #ddd;}
 	
 /*********************************************************************************/
 /* Image Style                                                                   */
@@ -245,8 +259,9 @@ bottom:0em;
              color: white !important;
 	}
 	.logo{
-		height: 2.1em;
+		height: 2em;
 	padding-bottom:.5em;
+		padding-left:2em;
 		
 	}
 	.button:before
@@ -312,30 +327,40 @@ bottom:0em;
 /* 3-column                                                                      */
 /*********************************************************************************/
 
-.divbut:active{
+.box:active{
 	background:#224D8E !important;
 	box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
 	transition: all 100ms;
 	color:#aaa !important;
 	text-shadow: 0 0 1px rgba(255,255,255,.5)
 }
-a{text-decoration: none}
+a{text-decoration: none;color:inherit}
 
 
-	.boxA,
-	.boxB,
-	.boxC
-	{
-		width: 320px;
+	.box{
+		width: 24%;
+		padding:40px 20px ;
+		margin:10px;
 	}
+.uptop{color:#ddd !important;padding:1em;}
+.uptop:active{color:#55a !important}
+.uptop:hover{color:#55a !important}
 
-	.plunger{
+.boxie,.unboxie{
+    	padding:1em 1em 5em 1em;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 8px;
+ text-align: left;
 
-		width:100%;
-	}
+width:90%;
+	margin:auto;
+	height: 200px
+}
 
-.divbut:hover{
-	background:#225DAE;
+.plunger{width:100%;}
+
+.box:hover,.plunger:hover,.boxie:hover{
+	background:#225DAE !important;
 	cursor:pointer;
 	color:white;
 }
@@ -345,7 +370,7 @@ a{text-decoration: none}
 .menuitema:hover{
 	background: #2255aa
 }
-.divbut, .divbutb{
+.box, .divbutb{
 	border-radius:10px;
 	transition:all 500ms ease;
 	
@@ -355,16 +380,10 @@ a:visited{color:inherit}
  a .divbut{	color:#777 ;}
 a .divbutb{	color:#777;}
 	.boxA,
-	.boxB
-	{
-		float: left;
-		margin-right: 20px;
-		
-	}
-	
+	.boxB,
 	.boxC
 	{
-		float: right;
+	text-align:center;
 	}
 
 /*********************************************************************************/
@@ -461,6 +480,8 @@ a .divbutb{	color:#777;}
 		text-transform: uppercase;
 		font-size: 0.8em;
 		color: #FFF;
+		font-weight: 900;
+		font-family:  Varela, Sans Seriff;
 	}
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
@@ -497,6 +518,7 @@ a .divbutb{	color:#777;}
 		background-size: cover;
 		text-align: center;
 		color: rgba(255,255,255,.8);
+
 	}
 
 	#banner .title
@@ -571,6 +593,9 @@ a .divbutb{	color:#777;}
 		overflow: hidden;
 		padding: 5em 0em;
 		border-top: 1px solid rgba(255,255,255,0.08);
+		background:#333;
+		position:relative;
+		bottom:0px;
 	}
 	
 	#copyright p
@@ -636,7 +661,7 @@ a .divbutb{	color:#777;}
 	#extra
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding:0em;
 	}
 	
 	#extra .title

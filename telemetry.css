@@ -14,7 +14,12 @@ max-width:500px !important;
 
 body{margin:0;}
 
-#panel{position:absolute;width:74em;z-index:2;
+#panel{
+	position:absolute;
+	width:74em;
+	z-index:2;
+	text-align:left;
+	margin-left:2em;
   }
   
  .taito{
@@ -343,5 +348,4 @@ top: 39.5em;
 height:8em;
 width:18.5em;
 }
-			
 			
