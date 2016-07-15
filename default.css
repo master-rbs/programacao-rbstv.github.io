@@ -659,3 +659,14 @@ a .divbutb{	color:#777;}
 
 
 
+/* RESPONSIVE */
+
+@media screen and  (max-width:420px) {
+
+	#header-wrapper{
+        background:red;
+
+    }
+
+
+}
