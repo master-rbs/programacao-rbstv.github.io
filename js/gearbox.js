@@ -22,7 +22,7 @@ $(window).scroll(function() {
     $('.logo').css('margin-top','-.3em');
        $('#header-wrapper').css('height','4em');
        $('#header-wrapper').css('background','#225DAE');
-      $('#header-wrapper').css('	box-shadow','0px 2px 10px ');
+      $('#header-wrapper').css('box-shadow','0px 2px 10px');
   } else {
     // not scrolled past the menu; only show the original menu.
 
@@ -30,7 +30,7 @@ $(window).scroll(function() {
           $('.logo').css('height','2em');
           $('#header-wrapper').css('height','133');
         $('#header-wrapper').css('background','');
-        $('#header-wrapper').css('	box-shadow','');
+        $('#header-wrapper').css('box-shadow','');
 
   }
 });
