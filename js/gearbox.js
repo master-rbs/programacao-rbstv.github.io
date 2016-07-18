@@ -14,10 +14,14 @@ $(window).scroll(function() {
 
   var orgElementPos = $('#extra').offset();
   orgElementTop = orgElementPos.top;
+     $('#banner').css('background-position','0px -'+($(window).scrollTop()/2) +'px');
 
   if ($(window).scrollTop() >= (orgElementTop-70)) {
 
+
+
     $('#menu').css('top','.8em');
+
     $('.logo').css('height','1.5em');
     $('.logo').css('margin-top','-.3em');
        $('#header-wrapper').css('height','4em');
