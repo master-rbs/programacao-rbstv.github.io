@@ -29,6 +29,7 @@ $(window).scroll(function() {
       $('#header-wrapper').css('box-shadow','0px 2px 10px');
   } else {
 
+
     $('#menu').css('top','2em');
           $('.logo').css('height','2em');
        $('.logo').css('margin-top','');
