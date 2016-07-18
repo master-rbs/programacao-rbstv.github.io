@@ -475,6 +475,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225dae', end
 	#menu ul
 	{
 		display: inline-block;
+		margin-right:2em;
 	}
 	
 	#menu li
