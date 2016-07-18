@@ -262,6 +262,7 @@ text-align: center;
 		height: 2em;
 	padding-bottom:.5em;
 		padding-left:2em;
+		transition: all 500ms ease-in-out;
 		
 	}
 	.button:before
@@ -368,7 +369,7 @@ width:90%;
 
 
 .menuitema:hover{
-	background: #2255aa
+	//background: #2255aa
 }
 .box, .divbutb{
 	border-radius:10px;
@@ -417,13 +418,23 @@ a .divbutb{	color:#777;}
 
 	#header-wrapper
 	{
-		background: #225DAE;
+		background: -moz-linear-gradient(top, rgba(34,93,174,1) 0%, rgba(34,93,174,0.5) 50%, rgba(34,93,174,0) 100%);
+background: -webkit-linear-gradient(top, rgba(34,93,174,1) 0%,rgba(34,93,174,0.5) 50%,rgba(34,93,174,0) 100%);
+background: linear-gradient(to bottom, rgba(34,93,174,1) 0%,rgba(34,93,174,0.5) 50%,rgba(34,93,174,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225dae', endColorstr='#00225dae',GradientType=0 );
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:9000;
+		height:133px;
+			transition: all 500ms ease-in-out;
 	}
 
 	#header
 	{
-		position: relative;
-		padding: 3em 0em;
+		//position: relative;
+		//padding: 0em 0em;
 	}
 
 /*********************************************************************************/
@@ -458,6 +469,7 @@ a .divbutb{	color:#777;}
 		position: absolute;
 		top: 2em;
 		right: 0;
+		transition: all 500ms ease-in-out;
 	}
 	
 	#menu ul
@@ -470,11 +482,13 @@ a .divbutb{	color:#777;}
 		display: block;
 		float: left;
 		text-align: center;
+
 	}
 	
 	#menu li a, #menu li span
 	{
-		padding: 1em 1.5em;
+		padding: 0.3em 0em;
+		margin:0em 1em;
 		letter-spacing: 1px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -483,21 +497,36 @@ a .divbutb{	color:#777;}
 		font-weight: 900;
 		font-family:  Varela, Sans Seriff;
 	}
-	
+.current_page_item{
+	background: #fff;
+	padding:.5em;
+	pointer-events: none
+}
+
+
+.menuitema{
+	padding:.5em;
+}
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
+
 		color: #FFF;
 	}
 	
 	#menu .current_page_item a
 	{
-		background: #124D8E;
-		color: #FFF;
+		//background: #fff;
+		color: #225DAE;
+	//	border-bottom:solid 3px;
+			transition: all 10ms ease-in-out;
+				font-weight:900;
 	}
 		#menu .menuitema a:hover
 	{
-		background: #324D8E;
+		//background: #324D8E;
 		color: #FFF;
+			border-bottom:solid 3px;
+				transition: all 10ms ease-in-out
 	}
 
 	#menu .icon
@@ -511,7 +540,7 @@ a .divbutb{	color:#777;}
 	#banner
 	{
 		overflow: hidden;
-		padding: 7em 0em 5em 0em;
+		padding: 15% 0em 5em 0em;
 		
 		background: url('img/prima.gif');
 
