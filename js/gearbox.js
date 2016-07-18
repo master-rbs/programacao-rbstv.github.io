@@ -24,7 +24,6 @@ $(window).scroll(function() {
        $('#header-wrapper').css('background','#225DAE');
       $('#header-wrapper').css('box-shadow','0px 2px 10px');
   } else {
-    // not scrolled past the menu; only show the original menu.
 
     $('#menu').css('top','2em');
           $('.logo').css('height','2em');
