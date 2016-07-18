@@ -15,7 +15,7 @@ $(window).scroll(function() {
   var orgElementPos = $('#extra').offset();
   orgElementTop = orgElementPos.top;
 
-  if ($(window).scrollTop() >= (orgElementTop)) {
+  if ($(window).scrollTop() >= (orgElementTop-70)) {
 
     $('#menu').css('top','.8em');
     $('.logo').css('height','1.5em');
@@ -27,6 +27,7 @@ $(window).scroll(function() {
 
     $('#menu').css('top','2em');
           $('.logo').css('height','2em');
+       $('.logo').css('margin-top','');
           $('#header-wrapper').css('height','133');
         $('#header-wrapper').css('background','');
         $('#header-wrapper').css('box-shadow','0px 2px 10px rgba(0,0,0,0)');
