@@ -29,7 +29,7 @@ $(window).scroll(function() {
           $('.logo').css('height','2em');
           $('#header-wrapper').css('height','133');
         $('#header-wrapper').css('background','');
-        $('#header-wrapper').css('box-shadow','');
+        $('#header-wrapper').css('box-shadow','0px 2px 10px rgba(0,0,0,0)');
 
   }
 });
