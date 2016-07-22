@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tutorial - Programação RBS TV</title>
-<link rel="shortcut icon" href="img/rbstv.png">
 	<meta tunnel="enabled">
-	<meta charset="utf-8">	
+	<meta charset="utf-8">
 	<title></title>
 	<style>
 
@@ -76,11 +74,12 @@
 	</style>
 </head>
 
-<body><div id="top">
+<body>
+
+    <div id="top">
 
 	<img style="position:absolute; bottom:20px; right:20px; width:100px;" src="http://www.gruporbs.com.br/wp-content/themes/rbs/img/rbs-footer-logo.png">
-	<div style="position:absolute; bottom:20px; left:20px; width:200px;color:white; font-family:Calibri, Arial, Helvetica, Sans Serif">Tutorial - Criar Alertas</div>
-	
+	<div style="position:absolute; bottom:20px; left:20px; width:200px;color:white; font-family:Calibri, Arial, Helvetica, Sans Serif">Tutorial - Remover Alertas</div>
 	<div id="title">
 
 	</div>
@@ -134,56 +133,66 @@
 	        </feMerge>
 	    </filter>
 	</svg>
-	<script src="js/jquery.min.js"></script><script src="js/gearbox.js"></script></body>
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/gearbox.js"></script>
+    </div>
+    </body>
 	<script type="text/javascript">
 
 		function Slide(zero, one, two, classe){
 			classe = classe || 'shad';
 			this.zero = zero;
 			this.one = one;
-			this.two = '<img class="'+classe+'" src="http://'+two+'">';
+			this.two = '<img class="'+classe+'" src="'+two+'">';
 		}
 
-		var slides = [ 
+		var slides = [
 			new Slide(
-				"1: Tela de Home",
-				"Ela é acessada clicando no cabeçalho da página.",
-				"i.imgur.com/bMFHueR.png"
+				"1: Acessando os Documentos",
+				"Selecione a opção \"Documentos\" na barra lateral (segundo item).",
+				"./img/epg/01.jpg"
 			),
 
-			new Slide(
-				"2: Entre na Aba 'Página'",
-		    	"Acima do cabeçalho, ao lado de procurar clique na aba página para visualizar o painel do próximo passo.",
-		    	'i.imgur.com/nH9lwtf.png'
-		    ),
-			
-			new Slide(
-		    	"3: Alertar-me > Gerenciar Meus Alertas",
-		    	"Clique no sino com titulo de Alertar-me e no menu que abrir clique em Gerenciar Meus Alertas.",
-				'i.imgur.com/p8KM0Gh.png'
+	new Slide(
+				"2: Acessando a pasta EPG",
+				"Procure a pasta \"EPG\" em meio aos documentos.",
+				"./img/epg/02.jpg"
+			),
+new Slide(
+				"3: Selecione o Arquivo correspondente à sua Praça",
+				"Procure o nome da Praça entre as demais e marque a caixa de seleção à esquerda do nome. IMPORTANTE: Não abra o arquivo! Apenas marque a caixa.",
+				"./img/epg/03.jpg"
 			),
 
-			new Slide(
-		    	"4: Adicionar Alerta",
-		    	"Clique em Adicionar Alerta para criar um novo Alerta.",
-				'i.imgur.com/sw0qusF.png'
+    new Slide(
+				"4: Crie um Novo Alerta",
+				"Clique na opção: Alertar-me > Definir um alerta neste documento.",
+				"./img/epg/04.jpg"
 			),
-			new Slide(
-		    	"5: Marque a opção Falhas nas Emissoras e siga em 'próximo'",
-		    	"Marque o botão Falhas nas Emissoras (ou outra categoria que deseja receber alertas) role até o fim da página e clique em próximo.",
-				'i.imgur.com/Rtl3ilD.gif'
+
+
+    new Slide(
+				"5: Configurando o Alerta",
+				"Atente para as informações importantes grifadas em vermelho: Certifique-se de que o Alerta vale para qualquer alteração [1] , e que a Notificação será enviada imediatamente[2] .",
+				"./img/epg/05.jpg"
 			),
-			new Slide(
-		    	"6: Configurar e Confirmar",
-		    	"Configure o Alerta conforme desejar ou deixe como está, após isso confirme.",
-				'i.imgur.com/uz1trpA.png'
+
+    new Slide(
+				"6: Confirmação",
+				"Um email de confirmação de Alerta deve chegar dentro de alguns minutos.",
+				"./img/epg/06.jpg"
 			),
-			new Slide(
+
+
+new Slide(
 		    	"Pronto!",
-		    	'Alertas configurados com sucesso! Você deverá receber um email confirmando o processo.<br> <img id="volta" class="arrlft" src="http://www.lawofattractiongoddess.com/wp-content/uploads/2015/05/left-double-arrow-silver-transparent.png" onclick="setTimeout(sildeHome,200)" style="width:100px !important">',
+		    	'Alertas configurados com sucesso! Você deverá receber um email confirmando o processo.<br> <img id="volta" class="arrlft" src="img/backdoub.png" onclick="setTimeout(sildeHome,200)" style="width:100px !important">',
 				'img/check.png',
 				'fini'
 			)
+
+
 		];
 
 
@@ -200,27 +209,36 @@
 
 		function refreshSlide(sld) {
 
+ console.log(sld)
+  console.log(slides.length + " total")
+            if (sld < slides.length) {
+
 		    document.getElementById("title").innerHTML = slides[sld].zero;
 		    document.getElementById("helper").innerHTML = slides[sld].one;
 			document.getElementById("image").innerHTML = slides[sld].two;
+            };
 		}
 
 		function sildePlus() {
-		    currentSlide++;
-		    if (currentSlide > 7) {
+		    if (currentSlide >= slides.length-1) {
 		        currentSlide = 0;
-		    }
-		    refreshSlide(currentSlide);
+		    }else{currentSlide++}
+
 			if (currentSlide > 0){
 				show('voltaArr');
 			}
 			if (currentSlide == 0){
 				hide('voltaArr');
 			}
-			if (currentSlide == 6){
+			if (currentSlide == slides.length-1){
 				hide('duasArr');
 				hide('voltaArr');
 			}
+
+
+
+
+              refreshSlide(currentSlide);
 		}
 
 		function sildeHome() {
@@ -235,10 +253,10 @@
 		    currentSlide--;
 
 		    if (currentSlide < 0) {
-		        currentSlide = 5;
+		        currentSlide = slides.length-2;
 		    }
 
-		    refreshSlide(currentSlide);
+
 
 			console.log(currentSlide);
 			if (currentSlide > 0){
@@ -249,9 +267,10 @@
 				hide('voltaArr');
 			}
 
-			if (currentSlide == 6){
+			if (currentSlide >= slides.length-1){
 				hide('duasArr');
 			}
+                refreshSlide(currentSlide);
 		}
 
 
