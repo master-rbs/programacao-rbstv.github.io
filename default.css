@@ -2,7 +2,11 @@ a:hover{
 color:#225DAE !important;
     font-weight: 900;
 }
-
+.need_enclosure{
+	text-align: left;
+	padding: 8% 20%;
+line-height:40px;
+}
 
 html, body
 	{
@@ -57,7 +61,7 @@ bottom:-5em;
 		padding: 0px;
 		background: #333333;
 		font-family: 'Varela', sans-serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		font-weight: 300;
 		color: #656565;
 
@@ -125,6 +129,7 @@ text-align: center;
 	a:hover
 	{
 		text-decoration: none;
+		cursor: pointer;
 	}
 	
 	.container
@@ -710,14 +715,14 @@ background-position: 0px 0px;
 		margin-top: 5em;
 	}
 	
-	#extra .fa
+
+	#extra .uptop, .box .fa
 	{
 		display: block;
 		margin-bottom: 0.5em;
 		text-align: center;
 		font-size: 3em;
 	}
-
 
 
 /* RESPONSIVE */
