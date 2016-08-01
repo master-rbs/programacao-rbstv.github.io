@@ -1,4 +1,9 @@
-	html, body
+a:hover{
+color:#225DAE;
+
+}
+
+html, body
 	{
 		height: 100%;
 	}
