@@ -1,10 +1,7 @@
 a:hover{
-color:#225DAE;
+color:#225DAE !important;
 }
 
-a:visited{
-    color:inherit;
-}
 
 html, body
 	{
