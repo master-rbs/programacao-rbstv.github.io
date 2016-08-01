@@ -530,8 +530,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#225dae', end
 	}
 		#menu .menuitema a:hover
 	{
-		//background: #324D8E;
-		color: #FFF;
+		//background: #324D8E !important;
+		color: #FFF !important;
 			border-bottom:solid 3px;
 				transition: all 10ms ease-in-out
 	}
