@@ -1,6 +1,6 @@
 a:hover{
-color:#225DAE !important;
-    font-weight: 900;
+color:#225DAE;
+   // font-weight: 900;
 }
 .need_enclosure{
 	text-align: left;
