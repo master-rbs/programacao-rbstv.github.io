@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta tunnel="enabled">
+	<meta charset="utf-8">
+	<title>Relatório CAT</title>
+	<link href="tutorials.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<a class="closebut fa fa-close" href="javascript:window.close();"></a>
+    <div id="top">
+
+	<img style="position:absolute; bottom:20px; right:20px; width:100px;" src="http://www.gruporbs.com.br/wp-content/themes/rbs/img/rbs-footer-logo.png">
+	<div style="position:absolute; bottom:20px; left:20px; width:200px;color:white; font-family:Calibri, Arial, Helvetica, Sans Serif">Tutorial - Relatório CAT</div>
+	<div id="title">
+
+	</div>
+
+	<div id="image">
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="12" dy="12" result="offsetblur"/>
+	        <feFlood flood-color="rgba(0,0,0,0.5)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+
+	<div id="helper">
+
+	</div>
+
+	<div id="duasArr">
+		<div id="voltaArr">
+
+			<div id="volta">
+				<img id="volta" class="arrlft" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-arrows/006763-3d-transparent-glass-icon-arrows-arrowhead-solid-left.png"onclick="setTimeout(function() {sildeMinus();},200)" style="width:100px!important;">
+			</div>
+
+		</div>
+
+
+		<div id="vai">
+			<img id="vai" class="arrrit" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-arrows/006764-3d-transparent-glass-icon-arrows-arrowhead-solid-right.png"onclick="setTimeout(function() {sildePlus();},200)" style="width:100px!important;">
+		</div>
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow2">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="0" dy="0" result="offsetblur"/>
+	        <feFlood flood-color="rgba(160,160,255,0.8)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/gearbox.js"></script>
+    </div>
+    </body>
+	<script type="text/javascript">
+
+		function Slide(zero, one, two, classe){
+			classe = classe || 'shad';
+			this.zero = zero;
+			this.one = one;
+			this.two = '<img class="'+classe+'" src="'+two+'">';
+		}
+
+		var slides = [
+			new Slide(
+				"1.1: Preparação - 1.1",
+				"Selecione a primeira célula com dados da planilha gerada pelo qualitor, em todos os casos ela sempre será a <b>A2</b>.",
+				"./img/catrel/1.png"
+			),
+
+	new Slide(
+				"2: Preparação - 1.2",
+				"Com a A2 selecionada, dirija-se até o final dos dados sem tirar a seleção. Ao localizar o ultimo dado, segure SHIFT e clique na ultima céula.<br> Se preferir, selecione manualmente clicando e arrastando até o último, isso pode ser um pouco mais trabalhoso devido ao volume.",
+				"./img/catrel/2.png"
+			),
+new Slide(
+				"3: Importação",
+				"Na planilha do relatório, vá até a aba <b>Planilha Base</b> e cole o conteúdo na primeira linha disponivel no final da lista na coluna <b>CHAMADO</b>.",
+				"./img/catrel/3.png"
+			),
+
+    new Slide(
+				"4: Correção do Formato de Data - 4.1",
+				"Para que o Excel reconheça a Data, selecione a coluna ABERTURA <b>inteira</b>",
+				"./img/catrel/4.png"
+			),
+
+
+    new Slide(
+				"5: Correção do Formato de Data - 4.2",
+				"Procure o ícone do binóculo na aba Incial à direita. Clique nele e em seguida em <b>Localizar</b><br> O atalho para esta etapa é CTRL+L, que irá abrir a caixa de Localização.",
+				"./img/catrel/5.png"
+			),
+    new Slide(
+				"6: Correção do Formato de Data - 4.3",
+				"Acione a aba <b>Substituir</b>, no campo 'Localizar' digite \"-\" (hífen, sem as aspas), e o campo 'Substituir por' fica vazio. Em seguida clique em <b>Substituir Tudo</b>.",
+				"./img/catrel/6.png"
+			),
+    new Slide(
+				"7: Atualizando",
+				"Retorne à aba <b>REPORT</b> e na aba <b>Dados</b> clique em <b>Atualizar Tudo</b>.<br>O atalho para esta etapa é CTRL+ALT+F5",
+				"./img/catrel/7.png"
+        ),
+    new Slide(
+				"8: Verificando os dados",
+				"Após atualizar, a tabela e os numeros deverão atualizar imediatamente. Caso isto não ocorra, a probabilidade é de algo errado na etapa 5, tente fechar sem salvar e repita o processo.<br> Se o erro persistir, contatar 5150,",
+				"./img/catrel/8.png"
+			),
+
+
+new Slide(
+		    	"Pronto!",
+		    	'Relatório Atualizado, os gráficos vão se ajustar para a nova data inserida.<br> <img id="volta" class="arrlft" src="img/backdoub.png" onclick="setTimeout(sildeHome,200)" style="width:100px !important">',
+				'img/check.png',
+				'fini'
+			)
+
+
+		];
+
+
+
+		var currentSlide = 0;
+
+		function show(button){
+			document.getElementById(button).style.visibility='visible';
+		}
+
+		function hide(button){
+			document.getElementById(button).style.visibility='hidden';
+		}
+
+		function refreshSlide(sld) {
+
+ console.log(sld)
+  console.log(slides.length + " total")
+            if (sld < slides.length) {
+
+		    document.getElementById("title").innerHTML = slides[sld].zero;
+		    document.getElementById("helper").innerHTML = slides[sld].one;
+			document.getElementById("image").innerHTML = slides[sld].two;
+            };
+		}
+
+		function sildePlus() {
+		    if (currentSlide >= slides.length-1) {
+		        currentSlide = 0;
+		    }else{currentSlide++}
+
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+			if (currentSlide == slides.length-1){
+				hide('duasArr');
+				hide('voltaArr');
+			}
+
+
+
+
+              refreshSlide(currentSlide);
+		}
+
+		function sildeHome() {
+		    currentSlide = 0;
+		    refreshSlide(currentSlide);
+			hide('voltaArr');
+			show('duasArr');
+		}
+
+
+		function sildeMinus() {
+		    currentSlide--;
+
+		    if (currentSlide < 0) {
+		        currentSlide = slides.length-2;
+		    }
+
+
+
+			console.log(currentSlide);
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+
+			if (currentSlide >= slides.length-1){
+				hide('duasArr');
+			}
+                refreshSlide(currentSlide);
+		}
+
+
+		if (currentSlide == 0){
+			hide('voltaArr');
+		}
+
+		sildeHome();
+
+	</script>
+</html>
