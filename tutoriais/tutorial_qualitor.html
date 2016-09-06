@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta tunnel="enabled">
+	<meta charset="utf-8">
+	<title>Extrair informações do Qualitor</title>
+	<link href="tutorials.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<a class="closebut fa fa-close" href="javascript:window.close();"></a>
+    <div id="top">
+
+	<img style="position:absolute; bottom:20px; right:20px; width:100px;" src="http://www.gruporbs.com.br/wp-content/themes/rbs/img/rbs-footer-logo.png">
+	<div style="position:absolute; bottom:20px; left:20px; width:200px;color:white; font-family:Calibri, Arial, Helvetica, Sans Serif">Tutorial - Extrair informações do Qualitor</div>
+	<div id="title">
+
+	</div>
+
+	<div id="image">
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="12" dy="12" result="offsetblur"/>
+	        <feFlood flood-color="rgba(0,0,0,0.5)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+
+	<div id="helper">
+
+	</div>
+
+	<div id="duasArr">
+		<div id="voltaArr">
+
+			<div id="volta">
+				<img id="volta" class="arrlft" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-arrows/006763-3d-transparent-glass-icon-arrows-arrowhead-solid-left.png"onclick="setTimeout(function() {sildeMinus();},200)" style="width:100px!important;">
+			</div>
+
+		</div>
+
+
+		<div id="vai">
+			<img id="vai" class="arrrit" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-arrows/006764-3d-transparent-glass-icon-arrows-arrowhead-solid-right.png"onclick="setTimeout(function() {sildePlus();},200)" style="width:100px!important;">
+		</div>
+
+	</div>
+
+	<svg height="0" xmlns="http://www.w3.org/2000/svg">
+	    <filter id="drop-shadow2">
+	        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+	        <feOffset dx="0" dy="0" result="offsetblur"/>
+	        <feFlood flood-color="rgba(160,160,255,0.8)"/>
+	        <feComposite in2="offsetblur" operator="in"/>
+	        <feMerge>
+	            <feMergeNode/>
+	            <feMergeNode in="SourceGraphic"/>
+	        </feMerge>
+	    </filter>
+	</svg>
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/gearbox.js"></script>
+    </div>
+    </body>
+	<script type="text/javascript">
+
+		function Slide(zero, one, two, classe){
+			classe = classe || 'shad';
+			this.zero = zero;
+			this.one = one;
+			this.two = '<img class="'+classe+'" src="'+two+'">';
+		}
+
+		var slides = [
+			new Slide(
+				"1: Abrir Pesquisa",
+				"Localize o botão de pesquisa no canto superior esquerdo.",
+				"./img/qualit/1.png"
+			),
+
+	new Slide(
+				"2: Painel de Pesquisa",
+				"No menu 'Ações' vá até o item 'Aplicar Perfil'",
+				"./img/qualit/3.png"
+			),
+new Slide(
+				"3: Selecionando Perfil",
+				"Selecione o perfil de pesquisa <b>Chamados CAT RBS TV</b>.",
+				"./img/qualit/5.png"
+			),
+
+    new Slide(
+				"4: Data do Intervalo ",
+				"Selecione as datas que terão dados extraídos. O modelo recomendado é do dia 1 até o último (30,31,28,29) do mês anterior.",
+				"./img/qualit/xx.png"
+			),
+
+
+    new Slide(
+				"5: Pesquisar",
+				"Inicie o processo de pesquisa, isto pode demorar uns minutos.",
+				"./img/qualit/44.png"
+			),
+
+    new Slide(
+				"6: Extraindo os Dados",
+				"Após concluir a pesquisa, clique no botão de exportação de dados.",
+				"./img/qualit/6.png"
+        ),
+    new Slide(
+				"8: Escolhendo o Formato",
+				"Selecione o formato Excel, e em seguida no ícone de Salvar",
+				"./img/qualit/7.png"
+			),
+
+
+new Slide(
+		    	"Pronto!",
+		    	'Um arquivo Excel foi gerado com os dados crus do mês.<br> <img id="volta" class="arrlft" src="img/backdoub.png" onclick="setTimeout(sildeHome,200)" style="width:100px !important">',
+				'img/check.png',
+				'fini'
+			)
+
+
+		];
+
+
+
+		var currentSlide = 0;
+
+		function show(button){
+			document.getElementById(button).style.visibility='visible';
+		}
+
+		function hide(button){
+			document.getElementById(button).style.visibility='hidden';
+		}
+
+		function refreshSlide(sld) {
+
+ console.log(sld)
+  console.log(slides.length + " total")
+            if (sld < slides.length) {
+
+		    document.getElementById("title").innerHTML = slides[sld].zero;
+		    document.getElementById("helper").innerHTML = slides[sld].one;
+			document.getElementById("image").innerHTML = slides[sld].two;
+            };
+		}
+
+		function sildePlus() {
+		    if (currentSlide >= slides.length-1) {
+		        currentSlide = 0;
+		    }else{currentSlide++}
+
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+			if (currentSlide == slides.length-1){
+				hide('duasArr');
+				hide('voltaArr');
+			}
+
+
+
+
+              refreshSlide(currentSlide);
+		}
+
+		function sildeHome() {
+		    currentSlide = 0;
+		    refreshSlide(currentSlide);
+			hide('voltaArr');
+			show('duasArr');
+		}
+
+
+		function sildeMinus() {
+		    currentSlide--;
+
+		    if (currentSlide < 0) {
+		        currentSlide = slides.length-2;
+		    }
+
+
+
+			console.log(currentSlide);
+			if (currentSlide > 0){
+				show('voltaArr');
+			}
+
+			if (currentSlide == 0){
+				hide('voltaArr');
+			}
+
+			if (currentSlide >= slides.length-1){
+				hide('duasArr');
+			}
+                refreshSlide(currentSlide);
+		}
+
+
+		if (currentSlide == 0){
+			hide('voltaArr');
+		}
+
+		sildeHome();
+
+	</script>
+</html>

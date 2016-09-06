@@ -1,3 +1,21 @@
+.markling{
+	 position: relative;
+	top: -0.6em;
+	font-family: 'Varela' !important;
+	//font-weight: 900 !important;
+	font-size: 7pt !important;
+	text-transform: uppercase;
+	 -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.oran{
+	color:#0C0;
+}
+.green{
+	color:#E60;
+}
+
 a:hover{
 color:#225DAE;
    // font-weight: 900;
