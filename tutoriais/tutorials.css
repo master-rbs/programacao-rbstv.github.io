@@ -9,7 +9,27 @@
 	text-align:center;
 
 	}
+.closebut{
+    border-radius: 0 0 0 5px;
+    text-align: center;
+    vertical-align: middle;
+padding:8px;
 
+    background:#CC1111;
+    color:white;
+    position:fixed;
+    top:0px;
+    right:0px;
+    width:16px;
+height:16px;
+    text-decoration: none;
+}
+.closebut:hover{
+    background:#f00
+}
+.closebut:active{
+    background:#a00
+}
 	.arrrit{
 	position:absolute;
 	right:20px;
