@@ -12,7 +12,8 @@
     <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> </head>
 
-<body><div id="top"></div>
+<body>
+    <div id="top"></div>
     <div id="wrapper">
         <div id="header-wrapper">
             <div id="header" class="container">
@@ -37,57 +38,57 @@
                 <div class="bannerbk"> </div>
                 <!--  <a href="#top" class="uptop fa fa-arrow-circle-o-up"></a>
 				<li><a href="#" class="button">A</a></li>
-			</ul>-->
-            </div>
+			</ul>--></div>
         </div>
         <div id="extra" class="container">
             <!--		<div class="title">
 			<h2>Menu Teste</h2>
 			<span class="byline">Lorem Ipsum</span> </div>-->
             <div id="three-column">
-
                 <a class="box" href="telemetria.html"> <span class="fa fa-tachometer"></span>
                     <p>Telemetria</p>
                 </a>
-
                 <a class="box" href="planilhas.html"> <span class="fa  fa-bar-chart-o"></span>
                     <p>Planilhas Especiais</p>
                 </a>
-
-                 <a class="box" href="tutoriais.html"> <span class="fa fa-book"></span>
+                <a class="box" href="tutoriais.html"> <span class="fa fa-book"></span>
                     <p> Tutoriais</p>
                 </a>
-
                 <br>
                 <hr style="visibility:hidden">
                 <br>
-
-                 <a class="box" href="downloads.html"> <span class="fa  fa-cloud-download"></span>
+                <a class="box" href="downloads.html"> <span class="fa  fa-cloud-download"></span>
                     <p>Downloads</p>
                 </a>
-
-                 <a class="box" href="info.html"> <span class="fa fa-info-circle"></span>
+                <a class="box" href="info.html"> <span class="fa fa-info-circle"></span>
                     <p>Info</p>
                 </a>
-
-                 <a class="box" href="mailto:lucas.oliveira@rbstv.com.br;leandro.fernandes@rbstv.com.br?Subject=Contato%20Ambiente&message=TESTE "> <span class="fa fa-calendar"></span>
+                <a class="box" name="emailLink" id="emailLink" href=""> <span class="fa fa-calendar"></span>
                     <p>X</p>
                 </a>
-
-<br>
-<br>
-<br>
-
-
-
-            </div>
+                <br>
+                <br>
+                <br> </div>
         </div>
     </div>
     <div id="copyright" class="container">
         <p>Copyright &copy; 2015-2016 RBS TV</p>
-
     </div>
-    <script src="js/jquery.min.js"></script><script src="js/gearbox.js"></script>
-<script src="js/jquery.min.js"></script><script src="js/gearbox.js"></script></body>
+    <script src="mailing.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/gearbox.js"></script>
 
+<script>
+    $(function () {
+        $('#emailLink').on('click', function (event) {
+            event.preventDefault();
+            alert("Abrindo Outlook para envio à lista");
+            var email = mailing.progReport.emails.join("");
+            var subject = mailing.progReport.assunto;
+            var emailBody = mailing.progReport.item;
+            window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+        });
+    });
+</script>
+</body>
 </html>
