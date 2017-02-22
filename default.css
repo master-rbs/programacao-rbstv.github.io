@@ -92,7 +92,7 @@ bottom:-5em;
 	}
 #three-column{
 	width: 90%;
-  padding: 5em 0em 0em 0em;
+  padding: 2em 0em 0em 0em;
   margin: auto;
 text-align: center;
 	box-shadow: 0px 0px 13px #AAA;
@@ -328,7 +328,8 @@ text-align: center;
 	
 	.title .byline
 	{
-		font-size: 1.7em;
+		font-size: 1.2em;
+		margin:2em;
 		color: #6F6F6F;
 	}
 		
@@ -381,7 +382,7 @@ a{text-decoration: none;color:inherit}
 .uptop:hover{color:#55a !important}
 
 .boxie,.unboxie{
-    	padding:1em 1em 5em 1em;
+    	padding:.2em 1em 3em .1em;
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 8px;
  text-align: left;
@@ -733,6 +734,8 @@ background-position: 0px 0px;
 	#extra .title
 	{
 		text-align: center;
+		margin: 1em 2em 5em;
+
 	}
 	
 	#extra .button
