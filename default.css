@@ -66,7 +66,7 @@ bottom:-5em;
     padding:1em 0em 1em 1em;
     font-size:12pt;
 }
-.box
+.box,.boxV, .boxSP
 {
 	padding: 3em 2em 2em 2em;
 	border: 1px solid rgba(0,0,0,0.1);
@@ -75,6 +75,7 @@ bottom:-5em;
 	display: inline-block;
 	width:30%;
 }
+
 
 
 	body
@@ -377,6 +378,28 @@ a{text-decoration: none;color:inherit}
 		padding:40px 20px ;
 		margin:10px;
 	}
+ .boxV{
+		width: 20%;
+	 height: 250px;
+		padding:5px 10px ;
+		margin:2px;
+	 vertical-align: top;
+
+	}
+.pointer{
+	cursor:pointer;
+}
+.pointer:hover{
+	color:#3b3b6b;
+  text-decoration: underline;
+}
+ .boxSP{
+		width: 88%;
+		padding:5px 10px ;
+		margin:20px;
+	 vertical-align: top;
+
+	}
 .uptop{color:#ddd !important;padding:1em;}
 .uptop:active{color:#55a !important}
 .uptop:hover{color:#55a !important}
@@ -405,7 +428,7 @@ width:90%;
 .menuitema:hover{
 	//background: #2255aa
 }
-.box, .divbutb{
+.box, .boxV, .boxSP, .divbutb{
 	border-radius:10px;
 	transition:all 500ms ease;
 	
@@ -744,14 +767,63 @@ background-position: 0px 0px;
 	}
 	
 
-	#extra .uptop, .box .fa
+	#extra .uptop, .box .fa, .boxV .fa
 	{
 		display: block;
 		margin-bottom: 0.5em;
 		text-align: center;
 		font-size: 3em;
 	}
+	 .boxV .fa
+	{
+   		font-size: 2em;
+		margin-bottom: 0.2em;
+	}
+.boxSP .fa-calendar-o{
+	font-size: 1.5em !important;
+		margin-bottom: 0.2em;
+}
 
+
+
+	.boxV p,.boxSP  p{
+
+   		font-weight: 900;
+
+		margin-bottom: 0em;
+	}
+.boxV li{
+	text-align: left;
+	margin:8px auto;
+	width: 85%;
+	list-style-type: square;
+	font-size: 14px;
+
+}
+.boxSP li{
+	text-align: left;
+	display: inline;
+	margin:8px 15px;
+	width: 85%;
+	list-style-type: square;
+	font-size: 14px;
+
+}
+.boxSP .fa{
+	font-size: 10px;
+
+}
+.notfa{
+	font-family: "Varela";
+	font-size: 14px !important;
+
+}
+.boxSP li::before{
+	content:"."
+
+
+
+}
 
 /* RESPONSIVE */
 

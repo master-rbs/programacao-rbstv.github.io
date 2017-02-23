@@ -1,527 +1,451 @@
 var dateNow = new Date();
 var dd = dateNow.getDate();
-var mm = dateNow.getMonth()+1;
-
+var ww = dateNow.getDay();
+var mm = dateNow.getMonth() + 1;
 var yyyy = dateNow.getFullYear();
-if(dd<10){
-    dd='0'+dd;
-}
-if(mm<10){
-    mm='0'+mm;
-}
-var dateNow = dd+'/'+mm+'/'+yyyy;
-
-
-
-
-
+if (dd < 10) {
+    dd = '0' + dd
+};
+if (mm < 10) {
+    mm = '0' + mm
+};
+var dateNow = dd + '/' + mm + '/' + yyyy;
 var mailing = {
-
     //DIARIAMENTE
     progReport: {
-        item: "RELATÓRIO DA PROGRAMAÇÃO"
-        , assunto: "LATÓRIO DA PROGRAMAÇÃO - " + dateNow
-        , emails:[
-"CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "daniel.bittencourt@rbstv.com.br;"
- , "jeanpresser@gmail.com"
- , "ManutencaoTVPOA@gruporbs.onmicrosoft.com;"
- , "opecbag@rbstv.com.br;"
- , "opeccxs@rbstv.com.br;"
- , "opeccal@rbstv.com.br;"
- , "opecere@rbstv.com.br;"
- , "opecpfo@rbstv.com.br;"
- , "opecpel@rbstv.com.br;"
- , "opecrge@rbstv.com.br;"
- , "opecstc@rbstv.com.br;"
- , "opecsma@rbstv.com.br;"
- , "opecstr@rbstv.com.br;"
- , "opecuru@rbstv.com.br;"
- , "opecrs1@rbstv.com.br;"
- , "simone.donini@rbstv.com.br;"
- , "sistemas.broadcast@rbstv.com.br;"
-]
-    },
-    mediaCham: {
-        item: "MÍDIA DE CHAMADAS"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('progReport')"><span class="notfa"> Relatório da Programação</span></li>`
+        , assunto: "RELATÓRIO DA PROGRAMAÇÃO - " + dateNow
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "daniel bittencourt;"
+            , "jeanpresser@gmail.com;"
+            , "ManutencaoTVPOA;"
+            , "opecbag@rbstv.com.br;"
+            , "opeccxs@rbstv.com.br;"
+            , "opeccal@rbstv.com.br;"
+            , "opecere@rbstv.com.br;"
+            , "opecpfo@rbstv.com.br;"
+            , "opecpel@rbstv.com.br;"
+            , "opecrge@rbstv.com.br;"
+            , "opecstc@rbstv.com.br;"
+            , "opecsma@rbstv.com.br;"
+            , "opecstr@rbstv.com.br;"
+            , "opecuru@rbstv.com.br;"
+            , "opecrs1@rbstv.com.br;"
+            , "simone donini;"
+            , "sistemas broadcast;"
+        ]
+    }
+    , mediaCham: {
+        item: `<li class="fa pointer" onclick="javascript:mailToss('mediaCham')"><span class="notfa"> Mídia de Chamadas</span></li>`
         , assunto: "CHAMADAS RBS TV - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "daniel.bertoli@rbstv.com.br;"
- , "jairo.piscitelli@rbstv.com.br;"
- , "pedro.oselame@rbstv.com.br;"
- , "vinicius.moller@rbstv.com.br;"
-]
-    },
-
-    // SEG A SAB
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "daniel bertoli;"
+            , "jairo piscitelli;"
+            , "pedro oselame;"
+            , "vinicius moller;"
+        ]
+    }, // SEG A SAB
     fades: {
-        item: "FADES"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('fades')"><span class="notfa"> FADES</span></li>`
         , assunto: "FADE + CH J.A / G.E / REDAÇÃO RS || FADE + CH RBS N. / REDAÇÃO RS - " + dateNow
-        , emails:[
-    "adriana.sa@rbstv.com.br;"
- , "bruna.zanatta@rbstv.com.br;"
- , "guilherme.canal@rbstv.com.br;"
- , "IngestTVPOA@gruporbs.onmicrosoft.com;"
- , "leo.saballa@rbstv.com.br;"
- , "maria.polo@rbstv.com.br;"
- , "OperadoresSuitesRBSTVPOA@gruporbs.onmicrosoft.com;"
- , "RedacaoJANews@gruporbs.onmicrosoft.com;"
- , "rosangela.angrizani@rbstv.com.br;"
- , "Joyce.silva@rbstv.com.br;"
- , "gustavo.schwabe@rbstv.com.br;"
- , "Andressa.pesce@rbstv.com.br;"
- , "jeferson.pacheco@rbstv.com.br;"
- , "marcos.westermann@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "leonice.sordi@rbstv.com.br;"
-]
-    },
-
-    //SEG A SEX
+        , emails: [
+            "adriana sa;"
+            , "bruna zanatta;"
+            , "guilherme canal;"
+            , "IngestTVPOA;"
+            , "leo saballa;"
+            , "maria polo;"
+            , "OperadoresSuitesRBSTVPOA;"
+            , "RedacaoJANews;"
+            , "rosangela angrizani;"
+            , "Joyce silva;"
+            , "gustavo schwabe;"
+            , "Andressa pesce;"
+            , "jeferson pacheco;"
+            , "marcos westermann;"
+            , "marcelo cabral;"
+            , "leonice sordi;"
+        ]
+    }, //SEG A SEX
     stock: {
-        item: "ESTOQUE DISPONÍVEL RSC (SEG A SEX)"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('stock')"><span class="notfa"> Estoque Disponível RSC (SEG - SEX)</span></li>`
         , assunto: "ESTOQUE DISPONÍVEL RBS TV RS/SC - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "andre.lopes@tvglobo.com.br;"
- , "guilherme.florentino@tvglobo.com.br;"
- , "jorge.nogueira@tvglobo.com.br;"
- , "jose.martinez@tvglobo.com.br;"
- , "luizgo@tvglobo.com.br;"
- , "marcio.alvaro@tvglobo.com.br;"
- , "marco.faria@tvglobo.com.br;"
- , "andre.carvalho@tvglobo.com.br;"
-]
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "andre.lopes@tvglobo.com.br;"
+            , "guilherme.florentino@tvglobo.com.br;"
+            , "jorge.nogueira@tvglobo.com.br;"
+            , "jose.martinez@tvglobo.com.br;"
+            , "luizgo@tvglobo.com.br;"
+            , "marcio.alvaro@tvglobo.com.br;"
+            , "marco.faria@tvglobo.com.br;"
+            , "andre.carvalho@tvglobo.com.br;"
+        ]
     }
     , previaHora: {
-        item: "PRÉVIA HORA"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('previaHora')"><span class="notfa"> Prévia IBOPE Hora1</span></li>`
         , assunto: "PRÉVIA IBOPE H1 / BDRG – " + dateNow
-        , emails:[
-    "daniela.selistre@rbstv.com.br;"
- , "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "michelle.guerra@rbstv.com.br;"
- , "ariane.jorej@rbstv.com.br;"
- , "ellen.appel@rbstv.com.br;"
- , "caio.klein@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "jefferson.pacheco@rbstv.com.br;"
+        , emails: [
+            "daniela selistre;"
+            , "CoordenacaoRBSTV;"
+            , "michelle guerra;"
+            , "ariane jorej;"
+            , "ellen appel;"
+            , "caio klein;"
+            , "marcelo cabral;"
+            , "jefferson pacheco;"
 
-  ]
+        ]
     }
     , previaENC: {
-        item: "PRÉVIA ENC / J.A / G.E / J.H"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('previaENC')"><span class="notfa"> Prévia IBOPE Tarde</span></li>`
         , assunto: "PRÉVIA IBOPE - ENC / JA / GE / JH - " + dateNow
-        , emails:[
-    "Coordenacao RBSTV CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "ana.assumpcao@rbstv.com.br;"
- , "ariane.jorej@rbstv.com.br;"
- , "cezar.freitas@rbstv.com.br;"
- , "daniel.bertoli@rbstv.com.br;"
- , "ellen.appel@rbstv.com.br;"
- , "gustavo.schwabe@rbstv.com.br;"
- , "michelle.guerra@rbstv.com.br;"
- , "pedro.oselame@rbstv.com.br;"
- , "thiago.morao@rbstv.com.br;"
- , "tiago.cirqueira@rbstv.com.br;"
- , "caio.klein@rbstv.com.br;"
- , "amanda.pereira@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "jefferson.pacheco@rbstv.com.br;"
-]
+        , emails: [
+            "Coordenacao RBSTV CoordenacaoRBSTV;"
+            , "ana assumpcao;"
+            , "ariane jorej;"
+            , "cezar freitas;"
+            , "daniel bertoli;"
+            , "ellen appel;"
+            , "gustavo schwabe;"
+            , "michelle guerra;"
+            , "pedro oselame;"
+            , "thiago morao;"
+            , "tiago cirqueira;"
+            , "caio klein;"
+            , "amanda pereira;"
+            , "marcelo cabral;"
+            , "jefferson pacheco;"
+        ]
     }
     , previaIBOPEdata: {
-        item: "PRÉVIA IBOPE - NOVI / RBS N. / NOVII ATÉ 20H"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('previaIBOPEdata')"><span class="notfa"> Prévia IBOPE Noite</span></li>`
         , assunto: " PRÉVIA IBOPE RBSN - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "cezar.freitas@rbstv.com.br;"
- , "eloi.zorzetto@rbstv.com.br;"
- , "simone.donini@rbstv.com.br;"
- , "ellen.appel@rbstv.com.br;"
- , "caio.klein@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "jefferson.pacheco@rbstv.com.br;"
-]
-    },
-
-    //SEXTAS
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "cezar freitas;"
+            , "eloi zorzetto;"
+            , "simone donini;"
+            , "ellen appel;"
+            , "caio klein;"
+            , "marcelo cabral;"
+            , "jefferson pacheco;"
+        ]
+    }, //SEXTAS
     mapaCorte: {
-        item: "MAPA DE CORTE RSE"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('mapaCorte')"><span class="notfa"> Mapa Cortes RSE</span></li>`
         , assunto: "MAPA DE CORTE RBS TV - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- ]
-    },
-
-    //SÁBADOS
+        , emails: [
+            "CoordenacaoRBSTV;"
+        ]
+    }, //SÁBADOS
     previaIBOPEsab: {
-        item: "PRÉVIA VIA / SER / VID / DES / GLOB / J.A / G.E / J.H / MIS / EST "
+        item: `<li class="fa pointer" onclick="javascript:mailToss('previaIBOPEsab')"><span class="notfa"> Prévia IBOPE Sábado</span></li>`
         , assunto: "PRÉVIA IBOPE SÁBADO - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "ana.assumpcao@rbstv.com.br;"
- , "cezar.freitas@rbstv.com.br;"
- , "daniel.bertoli@rbstv.com.br;"
- , "daniela.selistre@rbstv.com.br;"
- , "daniela.ungaretti@rbstv.com.br;"
- , "ellen.appel@rbstv.com.br;"
- , "fernando.alencastro@rbstv.com.br;"
- , "gustavo.schwabe@rbstv.com.br;"
- , "laura.medina@rbstv.com.br;"
- , "leonice.sordi@rbstv.com.br;"
- , "rafaela.melz@rbstv.com.br;"
- , "rodaika@rbstv.com.br;"
- , "thiago.morao@rbstv.com.br;"
- , "tiago.cirqueira@rbstv.com.br;"
- , "william.mayer@rbstv.com.br;"
- , "amanda.pereira@rbstv.com.br;"
- , "tiago.pinho@rbstv.com.br;"
-]
-    },
-    espacoRedacao: {
-        item: "ESPAÇOS REDAÇÃO RS / PREVISÃO TEMPO"
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "ana assumpcao;"
+            , "cezar freitas;"
+            , "daniel bertoli;"
+            , "daniela selistre;"
+            , "daniela ungaretti;"
+            , "ellen appel;"
+            , "fernando alencastro;"
+            , "gustavo schwabe;"
+            , "laura medina;"
+            , "leonice sordi;"
+            , "rafaela melz;"
+            , "rodaika@rbstv.com.br;"
+            , "thiago morao;"
+            , "tiago cirqueira;"
+            , "william mayer;"
+            , "amanda pereira;"
+            , "tiago pinho;"
+        ]
+    }
+    , espacoRedacao: {
+        item: `<li class="fa pointer" onclick="javascript:mailToss('espacoRedacao')"><span class="notfa"> Fade Redação</span></li>`
         , assunto: "FADE REDAÇÃO RS DOMINGO - " + dateNow
-        , emails:[
-    "adriana.sa@rbstv.com.br;"
- , "bruna.zanatta@rbstv.com.br;"
- , "daniella.peretti@rbstv.com.br;"
- , "guilherme.canal@rbstv.com.br;"
- , "igor.roza@rbstv.com.br;"
- , "IngestTVPOA@gruporbs.onmicrosoft.com;"
- , "leo.saballa@rbstv.com.br;"
- , "maria.polo@rbstv.com.br;"
- , "OperadoresSuitesRBSTVPOA@gruporbs.onmicrosoft.com;"
- , "RedacaoJANews@gruporbs.onmicrosoft.com;"
- , "rosangela.angrizani@rbstv.com.br;"
- , "Joyce.silva@rbstv.com.br;"
+        , emails: [
+            "adriana sa;"
+            , "bruna zanatta;"
+            , "daniella peretti;"
+            , "guilherme canal;"
+            , "igor roza;"
+            , "IngestTVPOA;"
+            , "leo saballa;"
+            , "maria polo;"
+            , "OperadoresSuitesRBSTVPOA;"
+            , "RedacaoJANews;"
+            , "rosangela angrizani;"
+            , "Joyce silva;"
 
-  ]
-    },
-    //DOMINGOS
+        ]
+    }, //DOMINGOS
     previaCAM: {
-        item: "PRÉVIA CAM / GAL / TEMP / FUTE / FAUS / FANT / TOMARA",
-        assunto: "PRÉVIA IBOPE DOMINGO - " + dateNow,
-       emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "anselmo.prada@rbstv.com.br;"
- , "caio.klein@rbstv.com.br;"
- , "cezar.freitas@rbstv.com.br;"
- , "daniel.bertoli@rbstv.com.br;"
- , "daniela.selistre@rbstv.com.br;"
- , "daniela.ungaretti@rbstv.com.br;"
- , "ellen.appel@rbstv.com.br;"
- , "eurico.meira@rbstv.com.br;"
- , "fernando.alencastro@rbstv.com.br;"
- , "gino.basso@rbstv.com.br;"
- , "leonice.sordi@rbstv.com.br;"
- , "neto.fagundes@rbstv.com.br;"
- , "rosana.orlandi@rbstv.com.br;"
- , "shana.muller@rbstv.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "jefferson.pacheco@rbstv.com.br;"
- , "tiago.cirqueira@rbstv.com.br;"
-]
-    },
-    //QUARTAS
+        item: `<li class="fa pointer" onclick="javascript:mailToss('previaCAM')"><span class="notfa"> Prévia IBOPE Domingo</span></li>`
+        , assunto: "PRÉVIA IBOPE DOMINGO - " + dateNow
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "anselmo prada;"
+            , "caio klein;"
+            , "cezar freitas;"
+            , "daniel bertoli;"
+            , "daniela selistre;"
+            , "daniela ungaretti;"
+            , "ellen appel;"
+            , "eurico meira;"
+            , "fernando alencastro;"
+            , "gino basso;"
+            , "leonice sordi;"
+            , "neto fagundes;"
+            , "rosana orlandi;"
+            , "shana muller;"
+            , "anderson vargas;"
+            , "jefferson pacheco;"
+            , "tiago cirqueira;"
+        ]
+    }, //QUARTAS
     planPROG: {
-        item: "PLANEJAMENTO DOS PROGRAMAS RBS TV"
-        , assunto: "PLANEJAMENTO ROGRAMAÇÃO RBSTV - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "lele@rbstv.com.br;"
- , "leonardo.persigo@gruporbs.com.br;"
- , "leonice.sordi@rbstv.com.br;"
- , "ManutencaoTVPOA@gruporbs.onmicrosoft.com;"
- , "neca@rbstv.com.br;"
- , "mariana.pessin@rbstv.com.br;"
- , "PlanejamentoRS2@gruporbs.onmicrosoft.com;"
- , "mauricio.saraiva@rbstv.com.br;"
- , "monica.flores@rbstv.com.br;"
- , "norton.kappel@rbstv.com.br;"
- , "renan.blanco@rbstv.com.br;"
- , "rodaika@rbstv.com.br;"
- , "rosana.orlandi@rbstv.com.br;"
- , "rosangela.angrizani@rbstv.com.br;"
- , "sistemas.broadcast@rbstv.com.br;"
- , "telefonia.tv@rbstv.com.br;"
- , "ticiano.osorio@zerohora.com.br;"
- , "variedades@diariosm.com.br;"
- , "vinicius.vasconcellos@rbstv.com.br;"
- , "wagner.cunha@rbstv.com.br;"
- , "wesley.cardias@rbstv.com.br;"
- , "opecbag@rbstv.com.br;"
- , "opeccxs@rbstv.com.br;"
- , "opeccal@rbstv.com.br;"
- , "opecere@rbstv.com.br;"
- , "opecpfo@rbstv.com.br;"
- , "opecpel@rbstv.com.br;"
- , "opecrge@rbstv.com.br;"
- , "opecstc@rbstv.com.br;"
- , "opecsma@rbstv.com.br;"
- , "opecstr@rbstv.com.br;"
- , "opecuru@rbstv.com.br;"
- , "opecrs1@rbstv.com.br;"
- , "alessandro.sa@rbstv.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "andre.vanazzi@rbstv.com.br;"
- , "andrea.correa@rbstv.com.br;"
- , "donadio@gruporbs.com.br;"
- , "bernardo.barcellos@rbstv.com.br;"
- , "camila.sa.com.ri@zerohora.com.br;"
- , "candida.ortiz@rbstv.com.br;"
- , "carina.koppe@pioneiro.com.;"
- , "cat@rbstv.com.br;"
- , "clacir.balotin@rbstv.com.br;"
- , "cristiane.bazilio@diariogaucho.com.br;"
- , "cristiane.dill@rbstv.com.br;"
- , "cristina.ranzolin@rbstv.com.br;"
- , "daniela.selistre@rbstv.com.br;"
- , "debora.pradella@zerohora.com.br;"
- , "eduardo.rigon@rbstv.com.br;"
- , "eduardo.severojr@rbstv.com.br;"
- , "fernando.alencastro@rbstv.com.br;"
- , "flavia.requiao@diariogaucho.com.br;"
- , "gino.basso@rbstv.com.br;"
- , "guiatv@zerohora.com.br;"
- , "mario.santos@rbstv.com.br;"
- , "hojenatv@zerohora.com.br;"
- , "isabel.ferrari@rbstv.com.br;"
- , "jairo.lacks@gruporbs.com.br;"
- , "jairo.piscitelli@rbstv.com.br;"
- , "joao.moreirajr@rbstv.com.br;"
- , "joel.junior@rbstv.com.br;"
- , "karen.sinhor@diario.com.br;"
- , "segundocaderno@zerohora.com.br;"
- , "emanuel.pra@rbstv.com.br;"
- , "ProgramacaoRS@gruporbs.onmicrosoft.com;"
- , "emanuel.pra@rbstv.com.br;"
- , "leonardo.persigo@gruporbs.com.br;"
- , "CoordenacaodeProgramacaoSC1@gruporbs.onmicrosoft.com;"
- , "naiara.tups@rbstv.com.br;"
- , "william.mayer@rbstv.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "thiago.zenker@rbstv.com.br;"
- , "luci.jorge@rbstv.com.br;"
- , "larissa.bem@rbstv.com.br;"
- , "tiago.cirqueira@rbstv.com.br;"
- , "peter.oliveira@rbstv.com.br;"
- , "lua.hernandez@rbstv.com.br;"
-]
-    },
-    //SEGUNDAS E QUARTAS
-
+        item: `<li class="fa pointer" onclick="javascript:mailToss('planPROG')"><span class="notfa"> Planejamento Programação</span></li>`
+        , assunto: "PLANEJAMENTO PROGRAMAÇÃO RBSTV - " + dateNow
+        , emails: [
+            "CoordenacaoRBSTV;"
+            , "lele@rbstv.com.br;"
+            , "leonardo.persigo@gruporbs.com.br;"
+            , "leonice sordi;"
+            , "ManutencaoTVPOA;"
+            , "neca@rbstv.com.br;"
+            , "mariana pessin;"
+            , "PlanejamentoRS2;"
+            , "mauricio saraiva;"
+            , "monica flores;"
+            , "norton kappel;"
+            , "renan blanco;"
+            , "rodaika@rbstv.com.br;"
+            , "rosana orlandi;"
+            , "rosangela angrizani;"
+            , "sistemas broadcast;"
+            , "telefonia tv;"
+            , "ticiano osorio;"
+            , "vinicius vasconcellos;"
+            , "wagner cunha;"
+            , "wesley cardias;"
+            , "opecbag@rbstv.com.br;"
+            , "opeccxs@rbstv.com.br;"
+            , "opeccal@rbstv.com.br;"
+            , "opecere@rbstv.com.br;"
+            , "opecpfo@rbstv.com.br;"
+            , "opecpel@rbstv.com.br;"
+            , "opecrge@rbstv.com.br;"
+            , "opecstc@rbstv.com.br;"
+            , "opecsma@rbstv.com.br;"
+            , "opecstr@rbstv.com.br;"
+            , "opecuru@rbstv.com.br;"
+            , "opecrs1@rbstv.com.br;"
+            , "anderson vargas;"
+            , "andre vanazzi;"
+            , "andrea correa;"
+            , "donadio@gruporbs.com.br;"
+            , "bernardo barcellos;"
+            , "camila.sa.com ri;"
+            , "candida ortiz;"
+            , "carina koppe.;"
+            , "cat@rbstv.com.br;"
+            , "clacir balotin;"
+            , "cristiane bazilio;"
+            , "cristiane dill;"
+            , "cristina ranzolin;"
+            , "daniela selistre;"
+            , "debora pradella;"
+            , "eduardo rigon;"
+            , "eduardo severojr;"
+            , "fernando alencastro;"
+            , "flavia requiao;"
+            , "gino basso;"
+            , "guiatv@zerohora.com.br;"
+            , "mario santos;"
+            , "hojenatv@zerohora.com.br;"
+            , "isabel ferrari;"
+            , "jairo.lacks@gruporbs.com.br;"
+            , "jairo piscitelli;"
+            , "joao moreirajr;"
+            , "joel junior;"
+            , "karen.sinhor@diario.com.br;"
+            , "segundocaderno@zerohora.com.br;"
+            , "emanuel pra;"
+            , "ProgramacaoRS;"
+            , "emanuel pra;"
+            , "leonardo.persigo@gruporbs.com.br;"
+            , "CoordenacaodeProgramacaoSC1;"
+            , "naiara tups;"
+            , "william mayer;"
+            , "anderson vargas;"
+            , "anderson vargas;"
+            , "marcelo cabral;"
+            , "thiago zenker;"
+            , "luci jorge;"
+            , "larissa bem;"
+            , "tiago cirqueira;"
+            , "peter oliveira;"
+            , "lua hernandez;"
+        ]
+    }, //SEGUNDAS E QUARTAS
     gradeProg: {
-        item: "GRADES DE PROGRAMAÇÃO"
+        item: `<li class="fa pointer" onclick="javascript:mailToss('gradeProg')"><span class="notfa"> Grades de Programação</span></li>`
         , assunto: "GRADE DE PROGRAMAÇÃO RBS TV - " + dateNow
-        , emails:[
-    "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
- , "alessandra.souza@sky.com.br;"
- , "alessandro.sa@rbstv.com.br;"
- , "alessandro.medeiros@rbstv.com.br;"
- , "alexssandro.santos@netservicos.com.br;"
- , "almanaque@diariosm.com.br;"
- , "ana.leticia@an.com.br;"
- , "anacl@diariopopular.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "andre.vanazzi@rbstv.com.br;"
- , "andrea.correa@rbstv.com.br;"
- , "Andrea.leo@netservicos.com.br;"
- , "donadio@gruporbs.com.br;"
- , "bruna.trubian@gruporbs.com.br;"
- , "bruno.ferreira@rbstv.com.br;"
- , "caco.motta@rbstv.com.br;"
- , "caio.klein@rbstv.com.br;"
- , "candida.ortiz@rbstv.com.br;"
- , "carlos.vellosofilho@rbstv.com.br;"
- , "Carmem_Oliveira@gruporbs.onmicrosoft.com;"
- , "carolina.bender@rbstv.com.br;"
- , "caroline.vargas@rbstv.com.br;"
- , "celsobgp@gmail.com"
- , "cat@rbstv.com.br;"
- , "charles.santana@rbstv.com.br;"
- , "chico.izidro@correiodopovo.com.br;"
- , "clacir.balotin@rbstv.com.br;"
- , "clarice.becker@rbstv.com.br;"
- , "CoordenacaoTVCOM@gruporbs.onmicrosoft.com;"
- , "coordenadoresoperacaorbstvet.com.gruporbs.onmicrosoft.com;"
- , "CoordenadoresTecnicosInterior@gruporbs.onmicrosoft.com;"
- , "Coordenadores_TJ_InteriorRS@gruporbs.onmicrosoft.com;"
- , "cristiane.dill@rbstv.com.br;"
- , "Cristiano_Melo@gruporbs.onmicrosoft.com;"
- , "cristina.ranzolin@rbstv.com.br;"
- , "cybele.miranda@rdgaucha.com.br;"
- , "Daniela_Silva@gruporbs.onmicrosoft.com;"
- , "daniela.selistre@rbstv.com.br;"
- , "debora.pradella@zerohora.com.br;"
- , "elisabeth.quadros@t.com.com.br;"
- , "eloi.zorzetto@rbstv.com.br;"
- , "emanuel.pra@rbstv.com.br;"
- , "emmanuelle.auge@rbstv.com.br;"
- , "ernesto.nunes@gruporbs.mail.onmicrosoft.com;"
- , "esportes@correiodopovo.com.br;"
- , "eurico.meira@rbstv.com.br;"
- , "ezequiel.boeira@rbstv.com.br;"
- , "Fabiane_Echel@gruporbs.onmicrosoft.com;"
- , "felipe.minozzi@flyingfishes.com.br;"
- , "flavia.wolff@rbstv.com.br;"
- , "gabriela.haas@rbstv.com.br;"
- , "gelson.ferreira@rbstv.com.br;"
- , "giovana.antoniazzi@rbstv.com.br;"
- , "gladimir.ramos@rbstv.com.br;"
- , "gradesdeprogramacao@sky.com.br;"
- , "guiaeletronico@gvt.com.br;"
- , "guiatv@zerohora.com.br;"
- , "Guilherme.michelini@netservicos.com.br;"
- , "mario.santos@rbstv.com.br;"
- , "hojenatv@zerohora.com.br;"
- , "isabel.ferrari@rbstv.com.br;"
- , "jairo.lacks@gruporbs.com.br;"
- , "jairo.piscitelli@rbstv.com.br;"
- , "jeferson.goncalves@rbstv.com.br;"
- , "Joao_Baptista@gruporbs.onmicrosoft.com;"
- , "Joao.Bressan@netservicos.com.br;"
- , "joel.junior@rbstv.com.br;"
- , "jorge.almeida@rbstv.com.br;"
- , "jose.kaufmann@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "juarez.melo@rbstv.com.br;"
- , "julia.pereira@rbstv.com.br;"
- , "Juliano_Soares@gruporbs.onmicrosoft.com;"
- , "karen.sinhor@diario.com.br;"
- , "laura.medina@rbstv.com.br;"
- , "lele@rbstv.com.br;"
- , "leonardo.persigo@gruporbs.com.br;"
- , "leonice.sordi@rbstv.com.br;"
- , "Leticia_Cabrera@gruporbs.onmicrosoft.com;"
- , "leticiadasilva@rbstv.com.br;"
- , "lucia.achutti@rbstv.com.br;"
- , "luciano.moura@rbstv.com.br;"
- , "potter@atlantida.com.br;"
- , "luis.lorenzato@rbstv.com.br;"
- , "luizgonzaga@correiodopovo.com.br;"
- , "manoel.bezerra@rbstv.com.br;"
- , "ManutencaoTVPOA@gruporbs.onmicrosoft.com;"
- , "marcelo.perrone@zerohora.com.br;"
- , "marcelo.prestes@rbstv.com.br;"
- , "marcelo.rech@gruporbs.com.br;"
- , "marcelo.souza@rbstv.com.br;"
- , "marcio.desouza@rbstv.com.br;"
- , "Marcio_Meneghini@gruporbs.onmicrosoft.com;"
- , "neca@rbstv.com.br;"
- , "mariana.oselame@rbstv.com.br;"
- , "mariana.pessin@rbstv.com.br;"
- , "marketing@rbstv.com.br;"
- , "MarketingTVPOA@gruporbs.onmicrosoft.com;"
- , "maryenne.johann@rbstv.com.br;"
- , "matheus.carvalho@gruporbs.com.br;"
- , "mauro.vanin@rbstv.com.br;"
- , "melissa.gass@rbstv.com.br;"
- , "michele.pradella@diariogaucho.com.br;"
- , "michelle.guerra@rbstv.com.br;"
- , "milton.reimers@rbstv.com.br;"
- , "milton.saraiva@rbstv.com.br;"
- , "monica.flores@rbstv.com.br;"
- , "neimar.beschoren@rbstv.com.br;"
- , "norton.fabrizzio@gruporbs.com.br;"
- , "norton.kappel@rbstv.com.br;"
- , "Olavo_Silveira@gruporbs.onmicrosoft.com;"
- , "OPECTVRioGrandedoSul@gruporbs.onmicrosoft.com;"
- , "Orion_Silveira@gruporbs.onmicrosoft.com;"
- , "paty@diariopopular.com.br;"
- , "paula.menezes@rbstv.com.br;"
- , "paula@diariopopular.com.br;"
- , "pedro.oselame@rbstv.com.br;"
- , "ProgramacaoRS@gruporbs.onmicrosoft.com;"
- , "rafael.duardes@rbstv.com.br;"
- , "raissa.trindade@rbstv.com.br;"
- , "redacaovs@gruposinos.com.br;"
- , "renan.blanco@rbstv.com.br;"
- , "revel@revistaeletronica.com.br;"
- , "rodaika@rbstv.com.br;"
- , "rodrigo.brancher@rbstv.com.br;"
- , "rodrigo.lucas@rbstv.com.br;"
- , "rogerio.giaretta@diariosm.com.br;"
- , "rogerio.werk@rbstv.com.br;"
- , "rosana.orlandi@rbstv.com.br;"
- , "rosangela.angrizani@rbstv.com.br;"
- , "rosangela.monteiro@diariogaucho.com.br;"
- , "rosangela.rodrigues@zerohora.com.br;"
- , "rosinel@jornaldopovo.com.br;"
- , "roteironh@gruposinos.com.br;"
- , "sandra.santos@rbstv.com.br;"
- , "sandro.krechowieki@rbstv.com.br;"
- , "sara.antonow@rbstv.com.br;"
- , "saulo.mezzomo@rbstv.com.br;"
- , "siliane.vieira@pioneiro.com"
- , "simon.pitta@rbstv.com.br;"
- , "simone.lazzari@rbstv.com.br;"
- , "simone.silva@rbstv.com.br;"
- , "sulmix@sulmix.com.br;"
- , "telefonia.tv@rbstv.com.br;"
- , "ticiano.osorio@zerohora.com.br;"
- , "tmsgrades@tribune.com"
- , "tulio.milman@rbstv.com.br;"
- , "vania.jensen@rovicorp.com"
- , "variedades@diariosm.com.br;"
- , "vera.machado@rbstv.com.br;"
- , "vilnei.menegotto@rbstv.com.br;"
- , "vinicius.klein@rbstv.com.br;"
- , "vinicius.moller@rbstv.com.br;"
- , "vinicius.vasconcellos@rbstv.com.br;"
- , "vitor.bruxel@rbstv.com.br;"
- , "vivian.cunha@t.com.com.br;"
- , "simone.donini@rbstv.com.br;"
- , "adriano.vargas@gruporbs.com.br;"
- , "revel@revistaeletronica.com.br;"
- , "camila.ribeiro@rbstv.com.br;"
- , "jose.barros@diariogaucho.com.br;"
- , "daniel.bittencourt@rbstv.com.br;"
- , "Marcio_Grassi@gruporbs.onmicrosoft.com;"
- , "Roberta_Knijnik@gruporbs.onmicrosoft.com;"
- , "andreia.bandeira@rbstv.com.br;"
- , "jeanpresser@gmail.com"
- , "redacaovs@gruposinos.com.br;"
- , "Cristiano_Melo@gruporbs.onmicrosoft.com;"
- , "Lorena_Garcia@gruporbs.onmicrosoft.com;"
-  ,  "brasil@rovicorp.com"
- , "fernando.costa@revistaeletronica.com.br;"
- , "marcelo.bolzoni@rbstv.com.br;"
- , "bernardo.barcellos@rbstv.com.br;"
- , "tmsgrades@gracenote.com"
- , "lulacerda@gracenote.com"
- , "babreu@gracenote.com"
- , "lisiane.lisboa@rbstv.com.br;"
- , "jsiqueira@gracenote.com"
- , "lprauchner@correiodopovo.com.br;"
- , "msantuario@correiodopovo.com.br;"
- , "samuel.santos@rbstv.com.br;"
- , "roteirotv@pampa.com.br;"
- , "lprauchner@correiodopovo.com.br;"
- , "naiara.tups@rbstv.com.br;"
- , "revista@nexcabo.com.br;"
- , "digitacao2@nexcabo.com.br;"
- , "brasil@rovicorp.com"
- , "arcildo.reuter@rbstv.com.br;"
- , "nexcabo@gmail.com"
- , "thiago.zenker@rbstv.com.br;"
- , "centraltecnicarbstv.com.gruporbs.onmicrosoft.com;"
- , "roberta.fleck@rbstv.com.br;"
- , "anderson.vargas@rbstv.com.br;"
- , "marcelo.cabral@rbstv.com.br;"
- , "thiago.zenker@rbstv.com.br;"
- , "luci.jorge@rbstv.com.br;"
- , "larissa.bem@rbstv.com.br;"
- , "tatiana.issler@zerohora.com.br;"
- , "thais.pacheco@zerohora.com.br;"
- , "eduardo.castilhos@zerohora.com.br;"
- , "lvicente@correiodopovo.com.br;"
- , "graciela.mello@rbstv.com.br;"
- , "aline.ferreira@rbstv.com.br;"
- , "peter.oliveira@rbstv.com.br;"
- , "lua.hernandez@rbstv.com.br;"
-]
+        , emails: [
+          "CoordenacaoRBSTV@gruporbs.onmicrosoft.com;"
+            ,"UsuariosTVPortoAlegre@gruporbs.onmicrosoft.com;"
+            , "alessandra.souza@sky.com.br;"
+            , "alexssandro.santos@netservicos.com.br;"
+            , "almanaque@diariosm.com.br;"
+            , "ana.leticia@an.com.br;"
+            , "anacl@diariopopular.com.br;"
+            , "Andrea.leo@netservicos.com.br;"
+            , "donadio;"
+            , "bruna trubian;"
+            , "celsobgp@gmail.com;"
+            , "chico.izidro@correiodopovo.com.br;"
+            , "coordenadoresoperacaorbstvet.com.gruporbs.onmicrosoft.com;"
+            , "CoordenadoresTecnicosInterior@gruporbs.onmicrosoft.com;"
+            , "cybele.miranda@rdgaucha.com.br;"
+            , "debora pradella;"
+            , "elisabeth.quadros@t.com.com.br;"
+            , "ernesto.nunes@gruporbs.mail.onmicrosoft.com;"
+            , "esportes@correiodopovo.com.br;"
+            , "felipe.minozzi@flyingfishes.com.br;"
+            , "gradesdeprogramacao@sky.com.br;"
+            , "guiaeletronico@gvt.com.br;"
+            , "guiatv;"
+            , "Guilherme.michelini@netservicos.com.br;"
+            , "hojenatv@zerohora.com.br;"
+            , "jairo lacks;"
+            , "Joao.Bressan@netservicos.com.br;"
+            , "karen.sinhor@diario.com.br;"
+            , "leonardo persigo;"
+            , "potter@atlantida.com.br;"
+            , "luizgonzaga@correiodopovo.com.br;"
+            , "marcelo perrone;"
+            , "marcelo rech;"
+            , "matheus carvalho;"
+            , "michele pradella;"
+            , "norton fabrizzio;"
+            , "OPECTVRioGrandedoSul@gruporbs.onmicrosoft.com;"
+            , "paty@diariopopular.com.br;"
+            , "paula@diariopopular.com.br;"
+            , "redacaovs@gruposinos.com.br;"
+            , "revel@revistaeletronica.com.br;"
+            , "rogerio.giaretta@diariosm.com.br;"
+            , "rosangela monteiro;"
+            , "rosangela rodrigues;"
+            , "rosinel@jornaldopovo.com.br;"
+            , "roteironh@gruposinos.com.br;"
+            , "siliane.vieira@pioneiro.com;"
+            , "sulmix@sulmix.com.br;"
+            , "ticiano osorio;"
+            , "tmsgrades@tribune.com;"
+            , "vania.jensen@rovicorp.com;"
+            , "variedades@diariosm.com.br;"
+            , "vivian.cunha@t.com.com.br;"
+            , "adriano vargas;"
+            , "revel@revistaeletronica.com.br;"
+            , "jose barros;"
+            , "jeanpresser@gmail.com;"
+            , "redacaovs@gruposinos.com.br;"
+            , "brasil@rovicorp.com;"
+            , "fernando.costa@revistaeletronica.com.br;"
+            , "tmsgrades@gracenote.com;"
+            , "lulacerda@gracenote.com;"
+            , "babreu@gracenote.com;"
+            , "jsiqueira@gracenote.com;"
+            , "lprauchner@correiodopovo.com.br;"
+            , "msantuario@correiodopovo.com.br;"
+            , "roteirotv@pampa.com.br;"
+            , "lprauchner@correiodopovo.com.br;"
+            , "revista@nexcabo.com.br;"
+            , "digitacao2@nexcabo.com.br;"
+            , "brasil@rovicorp.com;"
+            , "nexcabo@gmail.com;"
+            , "tatiana issler;"
+            , "thais pacheco;"
+            , "eduardo castilhos;"
+            , "lvicente@correiodopovo.com.br;"
+
+
+
+        ]
     }
 }
+var week = [
+    //DOMINGO
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.previaCAM.item
+    ]
+    , //SEGUNDA
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+        , mailing.stock.item
+        , mailing.previaHora.item
+        , mailing.previaENC.item
+        , mailing.previaIBOPEdata.item
+        , mailing.gradeProg.item
+    ]
+    , //TERÇA
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+        , mailing.stock.item
+        , mailing.previaHora.item
+        , mailing.previaENC.item
+        , mailing.previaIBOPEdata.item
+    ]
+    , //QUARTA
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+		 , mailing.stock.item
+        , mailing.previaHora.item
+        , mailing.previaENC.item
+        , mailing.previaIBOPEdata.item
+        , mailing.planPROG.item
+        , mailing.gradeProg.item
+    ]
+    , //QUINTA
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+        , mailing.stock.item
+        , mailing.previaHora.item
+        , mailing.previaENC.item
+        , mailing.previaIBOPEdata.item
+    ]
+    , //SEXTA
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+        , mailing.stock.item
+        , mailing.previaHora.item
+        , mailing.previaENC.item
+        , mailing.previaIBOPEdata.item
+        , mailing.mapaCorte.item
+    ]
+    , //SÁBADO
+    [
+        mailing.progReport.item
+        , mailing.mediaCham.item
+        , mailing.fades.item
+        , mailing.previaIBOPEsab.item
+        , mailing.espacoRedacao.item
+    ]
+]

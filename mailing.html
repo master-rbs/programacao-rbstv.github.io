@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mailing - Programação RBS TV</title>
+    <link rel="shortcut icon" href="img/rbstv.png">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script src="js/jquery.min.js"></script>
+     <script src="mailing.js"></script>
+    </head>
+
+<body>
+    <div id="top"></div>
+    <div id="wrapper">
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="logo">
+                    <h1><a href="#"><img class="logo" src="img/logo.png"></a></h1> </div>
+                <div id="menu">
+                    <ul>
+                        <li class="menuitema"><a href="index.html" accesskey="1" title="">Home</a></li>
+                        <li class="menuitema"><a href="planilhas.html" accesskey="2" title="">Planilhas Especiais</a></li>
+                        <li class="menuitema"><a href="telemetria.html" accesskey="3" title="">Telemetria</a></li>
+                        <li class="menuitema"><a href="tutoriais.html" accesskey="4" title="">Tutoriais</a></li>
+                        <li class="menuitema"><a href="downloads.html" accesskey="5" title="">Downloads</a></li>
+                        <!--<li><a href="#" accesskey="5" title="">Contact Us</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="container">
+                <div class="title">
+                    <h2>Programação RBS TV</h2> <span class="byline">Ambiente Online (beta)</span> </div>
+                <div class="bannerbk"> </div>
+                <!--  <a href="#top" class="uptop fa fa-arrow-circle-o-up"></a>
+				<li><a href="#" class="button">A</a></li>
+			</ul>--></div>
+        </div>
+        <div id="extra" class="container">
+            <!--		<div class="title">
+			<h2>Menu Teste</h2>
+			<span class="byline">Lorem Ipsum</span> </div>-->
+            <div id="three-column">
+                <div class="title">
+                    <h2>MAILING</h2> <span class="byline">Listas de envio de email predefinidas.</span> </div>
+                <div class="boxSP"> <span class="fa fa-calendar-o"></span>
+                    <p>Listas de Hoje</p>
+                               <ul id="today">
+                                  <script>
+                                   $('#today').html(week[ww])
+                                   </script>
+                    </ul>
+                </div>
+
+                <div class="boxV"> <span class="fa fa-line-chart"></span>
+                    <p>Prévias IBOPE</p>
+                               <ul>
+                    <li class="pointer" onclick="javascript:mailToss('previaENC')">Prévia IBOPE Tarde</li>
+                    <li class="pointer" onclick="javascript:mailToss('previaIBOPEdata')">Prévia IBOPE Noite </li>
+                    <li class="pointer" onclick="javascript:mailToss('previaHora')">Prévia IBOPE Hora 1</li>
+                    <li class="pointer" onclick="javascript:mailToss('previaIBOPEsab')">Prévia IBOPE Sábado</li>
+                    <li class="pointer" onclick="javascript:mailToss('previaCAM')">Prévia IBOPE Domingo</li>
+                    </ul>
+                </div>
+
+                <div class="boxV"> <span class="fa   fa-table"></span>
+                    <p>Grades</p>
+                    <ul>
+                    <li class="pointer" onclick="javascript:mailToss('planPROG')">Planejamento Programação</li>
+                    <li class="pointer" onclick="javascript:mailToss('gradeProg')">Grade Programação</li>
+                    </ul>
+                </div>
+
+                <div class="boxV"> <span class="fa  fa-columns"></span>
+                    <p>FADES</p>
+                    <ul>
+                    <li class="pointer" onclick="javascript:mailToss('espacoRedacao')">Fade Redação</li>
+                    <li class="pointer" onclick="javascript:mailToss('fades')">Fades Geral</li>
+                    </ul>
+                </div>
+
+                    <div class="boxV"> <span class="fa  fa-stack-overflow"></span>
+                    <p>Programação</p>
+                    <ul>
+                    <li class="pointer" onclick="javascript:mailToss('stock')">Estoques RSC</li>
+                    <li class="pointer" onclick="javascript:mailToss('mapaCorte')">Mapa de Corte</li>
+                    <li class="pointer" onclick="javascript:mailToss('mediaCham')">Mídia de Chamadas</li>
+                    <li class="pointer" onclick="javascript:mailToss('progReport')">Relatório de Programação</li>
+                    </ul>
+                </div>
+
+
+                <br>
+                <a href="mailto:lucas.oliveira@rbstv.com.br?subject=Adicionar email na lista de mailing&body=%0D%0AEmail a ser adicionado: %0D%0ALista que recebe o email:%0D%0A%0D%0A---%0D%0A" target="_blank" class="button">Solicitar Alteração em Listas</a>
+                <br>
+                <br> </div>
+        </div>
+    </div>
+    <div id="copyright" class="container">
+        <p>Copyright &copy; 2015-2016 RBS TV</p>
+    </div>
+
+
+    <script src="js/gearbox.js"></script>
+
+<script>
+     function mailToss(icoming) {
+
+            alert("Abrindo Outlook para envio à lista");
+            var email = mailing[icoming].emails.join("");
+            var subject = mailing[icoming].assunto;
+            //var emailBody = mailing[icoming].item;
+            window.location = 'mailto:' + email + '?subject=' + subject;
+     }
+</script>
+</body>
+</html>
